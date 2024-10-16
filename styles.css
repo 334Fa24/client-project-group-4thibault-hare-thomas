@@ -48,6 +48,7 @@ footer > div:first-child {
 
 footer > div:last-child {
     padding: 20px 30px;
+    align-items: center;
 }
 
 footer .back-to-top {
@@ -64,6 +65,21 @@ footer .text-align-right {
 
 footer li {
     list-style-type: none;
+}
+
+.payment-methods img {
+    width: 28px;
+    height: 18px;
+    display: block;
+}
+
+.payment-methods li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.payment-methods li:last-child {
+    margin-right: 0;
 }
  
 /*STYLES FOR BANNER desktop*/

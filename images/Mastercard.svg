@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 18">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 56 36">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
   <defs>
     <style>
-      .cls-1 {
+      .st0 {
         fill: #ea001b;
       }
 
-      .cls-2 {
+      .st1 {
         fill: #ff5f01;
       }
 
-      .cls-3 {
+      .st2 {
         fill: #f79f1a;
       }
 
-      .cls-4 {
+      .st3 {
         fill: #fff7f2;
       }
     </style>
   </defs>
-  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <rect class="st3" width="56" height="36" rx="4" ry="4"/>
   <g>
-    <g id="Layer_1">
-      <rect class="cls-4" width="28" height="18" rx="2" ry="2"/>
-      <g>
-        <path class="cls-3" d="M23.7,9c0,3.3-2.7,6-6,6s-6-2.7-6-6,2.7-6,6-6,6,2.7,6,6h0Z"/>
-        <path class="cls-1" d="M16.3,9c0,3.3-2.7,6-6,6s-6-2.7-6-6,2.7-6,6-6,6,2.7,6,6h0Z"/>
-        <path class="cls-2" d="M14,4.3c-1.4,1.1-2.3,2.8-2.3,4.7s.9,3.6,2.3,4.7c1.4-1.1,2.3-2.8,2.3-4.7s-.9-3.6-2.3-4.7h0Z"/>
-      </g>
-    </g>
+    <path class="st2" d="M47.37,18c0,6.63-5.36,12-11.97,12s-11.97-5.37-11.97-12,5.35-12,11.97-12,11.98,5.37,11.98,12h0Z"/>
+    <path class="st0" d="M32.58,18c0,6.63-5.36,12-11.97,12s-11.97-5.37-11.97-12,5.36-12,11.97-12,11.97,5.37,11.97,12h0Z"/>
+    <path class="st1" d="M28,8.55c-2.79,2.19-4.59,5.61-4.59,9.45s1.79,7.26,4.59,9.45c2.79-2.19,4.59-5.61,4.59-9.45s-1.79-7.25-4.59-9.45h0Z"/>
   </g>
 </svg>
