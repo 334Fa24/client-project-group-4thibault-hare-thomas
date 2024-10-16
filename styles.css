@@ -1,43 +1,74 @@
+/* Global CSS */
+body, p, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
 
-/*nav*/
-body, ul {
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* nav */
+ul {
     margin: 0;
     padding: 0;   
 }
 
 /* Footer styling */
 footer {
-    background-color: #0a0a0a;
-    color: #fff;
-    padding: 0 30px;
+    background-color: #3D372F;
+    color: #fff7f2;
+    font-size: 12px;
 }
+
+footer p {
+    font-weight: 300;
+}
+
 footer .flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-footer > .flex > * {
+
+footer > .flex.five-column > * {
     width: 16%;
+}
+
+footer > div:first-child {
+    padding: 30px 30px;
+    border-bottom: #fff7f2 1px solid;
+}
+
+footer > div:last-child {
+    padding: 20px 30px;
+}
+
+footer .backToTop {
+    border: #fff7f2 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
  
 /*STYLES FOR BANNER desktop*/
 .banner {
-    background-color: black;
+    background-color: #3D372F;
     text-align: center;
-    padding: 5px 0;
+    padding: 2px 0 4px 0;
 }
 
 .banner a {
     color: #fff7f2;
-    font-weight: bold;
-    display: inline-block;
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
+    font-size: 12px;
 }
 
 .underline {
     text-decoration: underline;
+    font-weight: 500;
 }
 
 /*STYLES FOR NAV desktop*/
