@@ -83,33 +83,41 @@ footer li {
     font-weight: 500;
 }
 
-/*STYLES FOR NAV desktop*/
- ul {
-    margin: 0;
-    padding: 0;
+
+/* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+  }
+    nav ul {
+        text-align: right;
+        margin: 0;
+        padding: 0;
     
-}
-nav {
-    background-color: #fff7f2; 
-    padding: 20px;
-}
+    }
+    nav {
+        background-color: #fff7f2; 
+        padding: 20px;
+    }
 
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-}
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+        
+    }
 
-.nav-list li {
-    margin: 0 35px; 
-}
+    .nav-list li {
+        margin: 0 35px;
+        text-align: right;
+    }
 
-.nav-list a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: large;
-}
+    .nav-list a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: large;
+    }
+
 
 /*Book now design for desktop*/
 .book-nw {
