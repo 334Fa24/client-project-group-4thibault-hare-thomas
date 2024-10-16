@@ -1,3 +1,10 @@
+
+/*nav*/
+body, ul{
+    margin: 0;
+    padding: 0;
+    
+}
 /* Footer styling */
 footer {
     background-color: #0a0a0a;
@@ -7,3 +14,47 @@ footer div {
     display: flex;
     flex-direction: row;
 }
+
+/*STYLES FOR BANNER*/
+.banner{
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.banner a{
+    color: #fff7f2;
+    font-weight: bold;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+}
+
+/*STYLES FOR NAV*/
+ ul{
+    margin: 0;
+    padding: 0;
+    
+}
+nav {
+    background-color: #fff7f2; 
+    padding: 15px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 15px; 
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+}
+
