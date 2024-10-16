@@ -44,12 +44,12 @@ nav {
 .nav-list {
     list-style-type: none;
     display: flex;
-    justify-content: space-between; 
+    justify-content: flex-end; 
     align-items: center;
 }
 
 .nav-list li {
-    margin: 0 15px; 
+    margin: 0 10px; 
 }
 
 .nav-list a {
