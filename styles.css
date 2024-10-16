@@ -1,6 +1,6 @@
 
 /*nav*/
-body, ul{
+body, ul {
     margin: 0;
     padding: 0;   
 }
@@ -9,20 +9,25 @@ body, ul{
 footer {
     background-color: #0a0a0a;
     color: #fff;
+    padding: 0 30px;
 }
-footer div {
+footer .flex {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+footer > .flex > * {
+    width: 16%;
 }
  
 /*STYLES FOR BANNER desktop*/
-.banner{
+.banner {
     background-color: black;
     text-align: center;
     padding: 5px 0;
 }
 
-.banner a{
+.banner a {
     color: #fff7f2;
     font-weight: bold;
     display: inline-block;
@@ -31,12 +36,12 @@ footer div {
     height: fit-content;
 }
 
-.underline{
+.underline {
     text-decoration: underline;
 }
 
 /*STYLES FOR NAV desktop*/
- ul{
+ ul {
     margin: 0;
     padding: 0;
     
@@ -64,7 +69,7 @@ nav {
 }
 
 /*Book now design for desktop*/
-.book-nw{
+.book-nw {
     background-color: #DD793B;
     color: #fff;
     font-size: larger;
@@ -74,31 +79,30 @@ nav {
 }
 
 /*STYLES FOR NAV mobile*/
-@media(max-width:768px){
-    .nav-list{
+@media(max-width:768px) {
+    .nav-list {
         flex-direction: column;
         justify-content: flex-end;
         padding: 0;
     }
-/*STYLES FOR BANNER mobile*/
-.banner{
-    padding: 10px;
-    font-size: 14px;
-}
-    
-.book-nw{
-    padding: 15px 25px;
-    font-size: 1.2em; 
-        
-    }
-.nav-list li{
-    margin: 10px 0;       
+    /*STYLES FOR BANNER mobile*/
+    .banner {
+        padding: 10px;
+        font-size: 14px;
     }
     
-main{
-    padding: 15px;
+    .book-nw {
+        padding: 15px 25px;
+        font-size: 1.2em;   
+    }
+
+    .nav-list li {
+        margin: 10px 0;       
     }
     
+    main {
+        padding: 15px;
+    }
 }
 
 
