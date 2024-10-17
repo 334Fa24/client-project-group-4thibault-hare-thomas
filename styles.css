@@ -197,9 +197,6 @@ footer .basic-information div:first-child {
     font-weight: 500;
 }
 
-
-
-
 /* Desktop Viewport: Style rule for header */
 header {
     background-color: #fff7f2;
@@ -318,5 +315,23 @@ display: none;
     }
 }
 
-
-
+/* Hero Section Styling */
+section.hero {
+    width: 100%;
+    min-height: 400px;
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: #fff;
+    font-size: 56px;
+    text-shadow: 1px 1px 5px rgba(61, 55, 47, 0.5);
+}
+section.hero h1 {
+    margin: 0;
+}
