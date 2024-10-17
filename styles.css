@@ -223,6 +223,10 @@ nav li a {
 img {
     padding-top: 5px;
 }
+
+.menu-icon {
+display: none;
+}
 /*Book now design for desktop*/
 .book-now {
     background-color: #DD793B;
@@ -282,8 +286,25 @@ img {
         flex-direction: column;
         justify-content: flex-end;
         padding: 0;
+        display: none;
     }
-    /*STYLES FOR BANNER mobile*/
+
+    nav li {
+        margin: 10px 0;       
+    }
+     nav ul {
+        padding-top: 0;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 100px;
+        padding-right: 25px;
+    }
+/*STYLES FOR BANNER mobile*/
     .banner {
         padding: 10px;
         font-size: 14px;
@@ -292,14 +313,6 @@ img {
     .book-now {
         padding: 15px 25px;
         font-size: 1.2em;   
-    }
-
-    nav li {
-        margin: 10px 0;       
-    }
-    
-    main {
-        padding: 15px;
     }
 }
 
