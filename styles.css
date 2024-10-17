@@ -117,7 +117,18 @@ footer .basic-information div:first-child {
         text-align: right;
         margin-top: 12px;
     }
-} 
+}
+
+/* Footer Copyright Info/Payment Info Break */
+@media(max-width: 600px) {
+    footer > div:last-child {
+        display: block;
+        text-align: center;
+    }
+    footer > div:last-child p {
+        margin-bottom: 8px;
+    }
+}
 
 /* Mobile Footer Styling */
 @media(max-width: 450px) {
