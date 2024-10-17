@@ -319,7 +319,6 @@ display: none;
 section.hero {
     width: 100%;
     min-height: 400px;
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -334,4 +333,7 @@ section.hero {
 }
 section.hero h1 {
     margin: 0;
+}
+section.hero.rewards {
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
