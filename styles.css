@@ -30,6 +30,10 @@ footer h3 {
     font-size: inherit;
 }
 
+footer a {
+    transition: color 100ms ease;
+}
+
 footer .flex {
     display: flex;
     flex-direction: row;
@@ -56,6 +60,7 @@ footer .back-to-top {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 100ms ease;
 }
 
 footer .text-align-right {
@@ -88,6 +93,19 @@ footer .socials img {
 
 footer .basic-information div:first-child {
     margin-bottom: 12px;
+}
+
+/* Footer Hover Animations for Desktop */
+@media (min-width: 768px) {
+    footer a:hover {
+        color: #DD793B;
+    }
+    
+    footer .back-to-top:hover {
+        background-color: #DD793B;
+        color: #fff7f2;
+        box-shadow: inset 0px 0px 0px 1px #DD793B;
+    }
 }
 
 /* Column Width Adjustment */
