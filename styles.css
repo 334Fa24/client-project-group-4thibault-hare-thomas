@@ -16,7 +16,7 @@ ul {
     padding: 0;   
 }
 
-/* Footer styling */
+/* Desktop Footer Styling */
 footer {
     background-color: #3D372F;
     color: #fff7f2;
@@ -37,7 +37,7 @@ footer .flex {
     justify-content: space-between;
 }
 
-footer > .flex.five-column > * {
+footer .flex.five-column > * {
     width: 16%;
 }
 
@@ -52,7 +52,7 @@ footer > div:last-child {
 }
 
 footer .back-to-top {
-    border: #fff7f2 1px solid;
+    box-shadow: inset 0px 0px 0px 1px #fff7f2;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -67,21 +67,72 @@ footer li {
     list-style-type: none;
 }
 
-.payment-methods img {
+footer .payment-methods img {
     width: 28px;
     height: 18px;
     display: block;
 }
 
-.payment-methods li {
+footer .payment-methods li {
     display: inline-block;
     margin-right: 5px;
 }
 
-.payment-methods li:last-child {
+footer .payment-methods li:last-child {
     margin-right: 0;
 }
- 
+
+footer .socials img {
+    width: 10px;
+    height: 10px;
+}
+
+footer .basic-information div:first-child {
+    margin-bottom: 12px;
+}
+
+/* Tablet Footer Styling */
+@media(max-width: 768px) {
+    footer .flex.five-column {
+        flex-wrap: wrap;
+    }
+    footer .flex.five-column > * {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    footer .flex.five-column > .back-to-top {
+        display: inline-flex;
+        height: 60px;
+    }
+    footer .flex.five-column .basic-information {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .basic-information div:first-child, footer .flex.five-column > *:last-child, footer .flex.five-column > *:nth-child(4) {
+        margin-bottom: 0;
+    }
+    footer .basic-information div:last-child {
+        text-align: right;
+        margin-top: 12px;
+    }
+} 
+
+/* Mobile Footer Styling */
+@media(max-width: 450px) {
+    footer .flex.five-column > *, footer .flex.five-column .basic-information {
+        width: 100%;
+        display: block;
+    }
+    footer .basic-information div:last-child {
+        text-align: left;
+    }
+    footer .flex.five-column > *:nth-child(4) {
+        margin-bottom: 20px;
+    }
+}
+
 /*STYLES FOR BANNER desktop*/
 .banner {
     background-color: #3D372F;
