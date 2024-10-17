@@ -196,6 +196,8 @@ footer .basic-information div:first-child {
 }
 
 
+
+
 /* Desktop Viewport: Style rule for header */
 header {
     background-color: #fff7f2;
@@ -225,6 +227,41 @@ img {
 .book-now {
     background-color: #DD793B;
     color: #fff7f2;
+}
+
+/*Style for Dropdown(SERVICES/About)*/
+.dropdown ul{
+    display: none;
+    position: absolute;
+    background-color:#DD793B;   
+    padding: 10px;
+    list-style:none;
+    margin: 0;
+    box-shadow: 8px, 16px,rgba(0,0,0,0.2);    
+}
+
+.dropdown:hover ul{
+    display: block;
+}
+
+.dropdown ul li a{
+    color:#fff7f2;
+    padding: 12px;
+    display: block;
+    text-decoration: none;   
+}
+
+.dropdown ul li a:hover {
+    background-color:#DD793B;   
+}
+    /*Dropdown lines for About*/
+.dropdown-About li{
+   padding: 10px;
+    border-bottom: 1px solid #fff7f2;
+}
+
+.dropdown-About li:last-child{
+    border-bottom: none;
 }
 
 /*STYLES FOR NAV mobile*/
