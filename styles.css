@@ -176,7 +176,7 @@ footer .basic-information div:first-child {
 /* Desktop Viewport: Style rule for header */
 header {
     background-color: #fff7f2;
-    padding: 0 30px;
+    padding-left: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -190,21 +190,14 @@ nav ul {
 }
 
 nav li a {
-    padding: 30px 35px;
-}
-
-nav li a.last {
-    padding-right: 0;
+    padding: 20px 35px;
+    display: block;
 }
 
 /*Book now design for desktop*/
 .book-now {
     background-color: #DD793B;
-    color: #fff;
-    font-size: larger;
-    border-radius: 1px;
-    text-align: center;
-    padding: 20.4px 30px;
+    color: #fff7f2;
 }
 
 /*STYLES FOR NAV mobile*/
