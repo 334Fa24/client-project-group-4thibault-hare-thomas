@@ -230,37 +230,49 @@ img {
 }
 
 /*Style for Dropdown(SERVICES/About)*/
-.dropdown ul{
+.dropdown > a {
+    padding: 20px 35px;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Dropdown menu */
+.dropdown ul {
     display: none;
     position: absolute;
-    background-color:#DD793B;   
-    padding: 10px;
-    list-style:none;
+    background-color: #DD793B;
+    padding: 0;
     margin: 0;
-    box-shadow: 8px, 16px,rgba(0,0,0,0.2);    
+    list-style: none;
 }
 
-.dropdown:hover ul{
+/* Display dropdown on hover */
+.dropdown:hover ul {
     display: block;
 }
 
-.dropdown ul li a{
-    color:#fff7f2;
-    padding: 12px;
+/* Dropdown item styles */
+.dropdown ul li a {
+    padding: 12px 20px;
     display: block;
-    text-decoration: none;   
+    color: #fff7f2;
+    text-decoration: none;
 }
 
+/* Hover effect for both the dropdown items and the parent */
+.dropdown > a:hover,
 .dropdown ul li a:hover {
-    background-color:#DD793B;   
-}
-    /*Dropdown lines for About*/
-.dropdown-About li{
-   padding: 10px;
-    border-bottom: 1px solid #fff7f2;
+    background-color: #DD793B;
+    color: #fff7f2;
 }
 
-.dropdown-About li:last-child{
+/*lines for chid dropdowns*/
+.dropdown-About li {
+    padding: 10px; 
+    border-bottom: 1px solid #fff7f2; 
+}
+
+.dropdown-About li:last-child {
     border-bottom: none;
 }
 
