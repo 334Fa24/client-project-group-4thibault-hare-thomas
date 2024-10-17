@@ -198,6 +198,10 @@ nav li a {
 img {
     padding-top: 5px;
 }
+
+.menu-icon {
+display: none;
+}
 /*Book now design for desktop*/
 .book-now {
     background-color: #DD793B;
@@ -210,6 +214,7 @@ img {
         flex-direction: column;
         justify-content: flex-end;
         padding: 0;
+        display: none;
     }
     /*STYLES FOR BANNER mobile*/
     .banner {
@@ -228,6 +233,12 @@ img {
     
     main {
         padding: 15px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    nav ul {
+        padding-top: 0;
     }
 }
 
