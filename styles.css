@@ -91,6 +91,18 @@ footer .basic-information div:first-child {
     margin-bottom: 12px;
 }
 
+/* Column Width Adjustment */
+@media(max-width: 1125px) {
+    footer .flex.five-column > * {
+        width: 17%;
+    }
+}
+@media(max-width: 1075px) {
+    footer .flex.five-column > * {
+        width: 18%;
+    }
+}
+
 /* Tablet Footer Styling */
 @media(max-width: 768px) {
     footer .flex.five-column {
