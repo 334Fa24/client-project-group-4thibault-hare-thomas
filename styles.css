@@ -10,7 +10,6 @@ a {
     text-decoration: inherit;
 }
 
-/* nav */
 ul {
     margin: 0;
     padding: 0;   
@@ -42,7 +41,7 @@ footer .flex.five-column > * {
 }
 
 footer > div:first-child {
-    padding: 30px 30px;
+    padding: 30px;
     border-bottom: #fff7f2 1px solid;
 }
 
@@ -175,42 +174,31 @@ footer .basic-information div:first-child {
 
 
 /* Desktop Viewport: Style rule for header */
-    header {
-        width: 25%;
-        float: left;
-        padding-bottom: 0;
-  }
-    nav ul {
-        text-align: right;
-        margin: 0;
-        padding: 0;
-    
-    }
-    nav {
-        background-color: #fff7f2; 
-        padding: 20px;
-    }
+header {
+    background-color: #fff7f2;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+}
 
-    .nav-list {
-        list-style-type: none;
-        display: flex;
-        
-    }
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
 
-    .nav-list li {
-        margin: 0 35px;
-        text-align: right;
-    }
+nav li a {
+    padding: 30px 35px;
+}
 
-    .nav-list a {
-        text-decoration: none;
-        font-weight: bold;
-        font-size: large;
-    }
-
+nav li a.last {
+    padding-right: 0;
+}
 
 /*Book now design for desktop*/
-.book-nw {
+.book-now {
     background-color: #DD793B;
     color: #fff;
     font-size: larger;
@@ -221,7 +209,7 @@ footer .basic-information div:first-child {
 
 /*STYLES FOR NAV mobile*/
 @media(max-width:768px) {
-    .nav-list {
+    nav {
         flex-direction: column;
         justify-content: flex-end;
         padding: 0;
@@ -232,12 +220,12 @@ footer .basic-information div:first-child {
         font-size: 14px;
     }
     
-    .book-nw {
+    .book-now {
         padding: 15px 25px;
         font-size: 1.2em;   
     }
 
-    .nav-list li {
+    nav li {
         margin: 10px 0;       
     }
     
