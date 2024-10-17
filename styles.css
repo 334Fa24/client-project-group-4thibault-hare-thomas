@@ -31,6 +31,7 @@ footer h3 {
 }
 
 footer a {
+    -webkit-transition: color 100ms ease, -wekit-filter 100ms ease;
     transition: color 100ms ease;
 }
 
@@ -99,6 +100,10 @@ footer .basic-information div:first-child {
 @media (min-width: 768px) {
     footer a:hover {
         color: #DD793B;
+    }
+
+    footer .socials a:hover img {
+        filter: invert(51%) sepia(95%) saturate(370%) hue-rotate(338deg) brightness(89%) contrast(94%);
     }
     
     footer .back-to-top:hover {
