@@ -208,6 +208,7 @@ header {
     font-size: 18px;
 }
 
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -237,6 +238,11 @@ display: none;
 }
 
 /*Style for Dropdown(SERVICES/About)*/
+
+nav, .dropdown{
+    position: relative;
+    z-index: 1;
+}
 .dropdown > a {
     padding: 20px 35px;
     color: inherit;
@@ -251,11 +257,13 @@ display: none;
     padding: 0;
     margin: 0;
     list-style: none;
+    z-index: 100;
 }
 
 /* Display dropdown on hover */
 .dropdown:hover ul {
     display: block;
+    z-index: 100;
 }
 
 /* Dropdown item styles */
@@ -368,22 +376,38 @@ section.hero.about{
     margin: 0;
 }
 
-.about{
+.about, .about-motto{
     background-color: #fff7f2;
     line-height: 1.6;  
     padding: 20px 30px;
     margin: 0;
+    
 }
 
-.about h2{
+.about h2, .about-motto h2{
     margin-bottom: 10px;
+    text-align: left;
+    font-size: 2em;
+}
+
+.about p{
+    font-size: 1.5em;
 }
 
 .about-motto{
     background-color: #fff7f2;
-    text-align: center;
-    color: #DD793B;
+    color:#3D372F;
     padding: 20px 30px;
     margin: 0;
 }
+
+.about-motto p{
+    font-size: 2em;
+    color:#DD793B;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
+    word-spacing: 35px;
+}
+
 
