@@ -350,10 +350,17 @@ nav, .dropdown{
         height: 119px;
         cursor: pointer;
     }
-/*STYLES FOR BANNER mobile*/
+    /*STYLES FOR BANNER mobile*/
     .banner {
         padding: 10px;
         font-size: 14px;
+    }
+}
+
+/* Fixes menu position when banner breaks into 2 lines */
+@media(max-width: 370px) {
+    nav {
+        top: 173px;
     }
 }
 
