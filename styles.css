@@ -7,6 +7,10 @@ body, p, h3 {
     font-family: 'Inter';
 }
 
+body {
+    background-color: #fff7f2;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -413,21 +417,27 @@ table.rewards, table.rewards td, table.rewards th {
     padding: 10px
 }
 
-table.rewards th.no-border, table.rewards {
+table.rewards td, table.rewards th {
+    background-color: #fff;
+}
+
+table.rewards .empty, table.rewards {
     border: 0;
+    background-color: unset;
 }
 
 table.rewards td.center {
     text-align: center;
 }
 
-table.rewards th.highlight {
+table.rewards .highlight {
     background-color: #DD793B;
     border: 1px solid #DD793B;
     color: #fff7f2;
+    font-weight: 700;
 }
 
-table.rewards th.highlight-blk {
+table.rewards .highlight-blk {
     background-color: #3D372F;
     color: #fff7f2;
 }
@@ -437,8 +447,13 @@ table.rewards th.width {
     min-width: 110px;
 }
 
+table.rewards th.heading {
+    text-align: left;
+    background-color: #eebb9c52;
+}
+
 /*About content*/
-.Paragraph{
+.paragraph {
     padding: 20px 30px;
     font-size: 2em; 
     line-height: 1.6; 
@@ -448,7 +463,7 @@ table.rewards th.width {
     margin: 0;
 }
 
-.about, .about-motto{
+.about, .about-motto {
     background-color: #fff7f2;
     line-height: 1.6;  
     padding: 20px 30px;
@@ -456,24 +471,24 @@ table.rewards th.width {
     
 }
 
-.about h2, .about-motto h2{
+.about h2, .about-motto h2 {
     margin-bottom: 10px;
     text-align: left;
     font-size: 2em;
 }
 
-.about p{
+.about p {
     font-size: 1.5em;
 }
 
-.about-motto{
+.about-motto {
     background-color: #fff7f2;
     color:#3D372F;
     padding: 20px 30px;
     margin: 0;
 }
 
-.about-motto p{
+.about-motto p {
     font-size: 2em;
     color:#DD793B;
     text-align: center;
