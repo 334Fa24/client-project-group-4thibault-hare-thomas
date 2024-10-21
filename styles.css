@@ -345,10 +345,6 @@ nav, .dropdown{
         padding: 0;
         border: 0;
     }
-    
-    main {
-        padding: 15px;
-    }
 
     a.menu-icon {
         display: flex;
@@ -376,6 +372,9 @@ nav, .dropdown{
 }
 
 /* Hero Section Styling */
+section {
+    padding: 30px;
+}
 section.hero {
     position: relative;
     min-height: 400px;
@@ -386,7 +385,6 @@ section.hero {
     flex-direction: column;
     justify-content: flex-end;
     flex-wrap: wrap;
-    padding: 30px;
     color: #fff;
     font-size: 56px;
     text-shadow: 1px 1px 5px rgba(61, 55, 47, 0.5);
@@ -396,12 +394,47 @@ section.hero h1 {
     margin: 0;
 }
 
+section.hero.about{
+ background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
+}
+
+/* Rewards page style */
 section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-section.hero.about{
- background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
+table.rewards {
+    width: 100%;
+}
+
+table.rewards, table.rewards td, table.rewards th {
+    border: 1px solid #3D372F;
+    border-collapse: collapse;
+    padding: 10px
+}
+
+table.rewards th.no-border, table.rewards {
+    border: 0;
+}
+
+table.rewards td.center {
+    text-align: center;
+}
+
+table.rewards th.highlight {
+    background-color: #DD793B;
+    border: 1px solid #DD793B;
+    color: #fff7f2;
+}
+
+table.rewards th.highlight-blk {
+    background-color: #3D372F;
+    color: #fff7f2;
+}
+
+table.rewards th.width {
+    width: 25%;
+    min-width: 110px;
 }
 
 /*About content*/
