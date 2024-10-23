@@ -388,7 +388,9 @@ section.hero.rewards {
 }
 
 section.hero.about{
- background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
+    object-position: inherit;
+    
 }
 
 /*About content*/
