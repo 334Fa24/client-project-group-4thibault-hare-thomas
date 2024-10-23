@@ -7,6 +7,10 @@ body, p, h3 {
     font-family: 'Inter';
 }
 
+body {
+    background-color: #fff7f2;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -121,6 +125,7 @@ footer .basic-information div:first-child {
         width: 17%;
     }
 }
+
 @media(max-width: 1075px) {
     footer .flex.five-column > * {
         width: 18%;
@@ -132,23 +137,28 @@ footer .basic-information div:first-child {
     footer .flex.five-column {
         flex-wrap: wrap;
     }
+
     footer .flex.five-column > * {
         width: 45%;
         margin-bottom: 20px;
     }
+
     footer .flex.five-column > .back-to-top {
         display: inline-flex;
         height: 60px;
     }
+
     footer .flex.five-column .basic-information {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     footer .basic-information div:first-child, footer .flex.five-column > *:last-child, footer .flex.five-column > *:nth-child(4) {
         margin-bottom: 0;
     }
+
     footer .basic-information div:last-child {
         text-align: right;
         margin-top: 12px;
@@ -161,6 +171,7 @@ footer .basic-information div:first-child {
         display: block;
         text-align: center;
     }
+
     footer > div:last-child p {
         margin-bottom: 8px;
     }
@@ -172,9 +183,11 @@ footer .basic-information div:first-child {
         width: 100%;
         display: block;
     }
+
     footer .basic-information div:last-child {
         text-align: left;
     }
+
     footer .flex.five-column > *:nth-child(4) {
         margin-bottom: 20px;
     }
@@ -235,6 +248,7 @@ display: none;
 .mobile-nav {
     display: none;
 }
+
 /*Book now design for desktop*/
 .book-now {
     background-color: #DD793B;
@@ -247,6 +261,7 @@ nav, .dropdown{
     position: relative;
     z-index: 1;
 }
+
 .dropdown > a {
     padding: 20px 35px;
     color: inherit;
@@ -334,10 +349,6 @@ nav, .dropdown{
         padding: 0;
         border: 0;
     }
-    
-    main {
-        padding: 15px;
-    }
 
     a.menu-icon {
         display: flex;
@@ -365,6 +376,9 @@ nav, .dropdown{
 }
 
 /* Hero Section Styling */
+section {
+    padding: 30px;
+}
 section.hero {
     position: relative;
     min-height: 400px;
@@ -375,16 +389,13 @@ section.hero {
     flex-direction: column;
     justify-content: flex-end;
     flex-wrap: wrap;
-    padding: 30px;
     color: #fff;
     font-size: 56px;
     text-shadow: 1px 1px 5px rgba(61, 55, 47, 0.5);
 }
+
 section.hero h1 {
     margin: 0;
-}
-section.hero.rewards {
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
 section.hero.about{
@@ -393,8 +404,58 @@ section.hero.about{
     
 }
 
+/* Rewards page style */
+section.hero.rewards {
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
+}
+
+table.rewards {
+    width: 100%;
+}
+
+table.rewards, table.rewards td, table.rewards th {
+    border: 1px solid #3D372F;
+    border-collapse: collapse;
+    padding: 10px
+}
+
+table.rewards td, table.rewards th {
+    background-color: #fff;
+}
+
+table.rewards .empty, table.rewards {
+    border: 0;
+    background-color: unset;
+}
+
+table.rewards td.center {
+    text-align: center;
+}
+
+table.rewards .highlight {
+    background-color: #DD793B;
+    border: 1px solid #DD793B;
+    color: #fff7f2;
+    font-weight: 700;
+}
+
+table.rewards .highlight-blk {
+    background-color: #3D372F;
+    color: #fff7f2;
+}
+
+table.rewards th.width {
+    width: 25%;
+    min-width: 110px;
+}
+
+table.rewards th.heading {
+    text-align: left;
+    background-color: #eebb9c52;
+}
+
 /*About content*/
-.Paragraph{
+.paragraph {
     padding: 20px 30px;
     font-size: 2em; 
     line-height: 1.6; 
@@ -404,7 +465,7 @@ section.hero.about{
     margin: 0;
 }
 
-.about, .about-motto{
+.about, .about-motto {
     background-color: #fff7f2;
     line-height: 1.6;  
     padding: 20px 30px;
@@ -412,24 +473,24 @@ section.hero.about{
     
 }
 
-.about h2, .about-motto h2{
+.about h2, .about-motto h2 {
     margin-bottom: 10px;
     text-align: left;
     font-size: 2em;
 }
 
-.about p{
+.about p {
     font-size: 1.5em;
 }
 
-.about-motto{
+.about-motto {
     background-color: #fff7f2;
     color:#3D372F;
     padding: 20px 30px;
     margin: 0;
 }
 
-.about-motto p{
+.about-motto p {
     font-size: 2em;
     color:#DD793B;
     text-align: center;
@@ -437,5 +498,3 @@ section.hero.about{
     line-height: 1.2;
     word-spacing: 35px;
 }
-
-
