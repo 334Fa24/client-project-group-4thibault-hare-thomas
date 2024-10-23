@@ -21,6 +21,12 @@ ul {
     padding: 0;   
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* Desktop Footer Styling */
 footer {
     background-color: #3D372F;
@@ -39,12 +45,6 @@ footer h3 {
 footer a {
     -webkit-transition: color 100ms ease, -wekit-filter 100ms ease;
     transition: color 100ms ease;
-}
-
-footer .flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 footer .flex.five-column > * {
@@ -411,49 +411,24 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-table.rewards {
-    width: 100%;
+section.rewards ul {
+    list-style-position: inside;
 }
 
-table.rewards, table.rewards td, table.rewards th {
-    border: 1px solid #3D372F;
-    border-collapse: collapse;
-    padding: 10px
+.terms-conditions {
+    font-size: 14px;
 }
 
-table.rewards td, table.rewards th {
-    background-color: #fff;
+.terms-conditions h4 {
+    margin: 0 0 4px 0;
 }
 
-table.rewards .empty, table.rewards {
-    border: 0;
-    background-color: unset;
+section.rewards ul li p {
+    display: inline-block;
 }
 
-table.rewards td.center {
-    text-align: center;
-}
-
-table.rewards .highlight {
-    background-color: #DD793B;
-    border: 1px solid #DD793B;
-    color: #fff7f2;
-    font-weight: 700;
-}
-
-table.rewards .highlight-blk {
-    background-color: #3D372F;
-    color: #fff7f2;
-}
-
-table.rewards th.width {
-    width: 25%;
-    min-width: 110px;
-}
-
-table.rewards th.heading {
-    text-align: left;
-    background-color: #eebb9c52;
+.flex.three-column > * {
+    width: 33.3%;
 }
 
 /*Services Content*/
