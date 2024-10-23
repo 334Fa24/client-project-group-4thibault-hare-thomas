@@ -401,6 +401,10 @@ section.hero h1 {
 section.hero.about{
  background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
 }
+/*Services page style*/
+section.hero.services {
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/services-header");
+}
 
 /* Rewards page style */
 section.hero.rewards {
@@ -450,6 +454,10 @@ table.rewards th.width {
 table.rewards th.heading {
     text-align: left;
     background-color: #eebb9c52;
+}
+
+/*Services Content*/
+.prices {
 }
 
 /*About content*/
