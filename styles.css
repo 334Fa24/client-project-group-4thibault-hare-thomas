@@ -115,7 +115,7 @@ footer .basic-information div:first-child {
     footer .back-to-top:hover {
         background-color: #DD793B;
         color: #fff7f2;
-        box-shadow: inset 0px 0px 0px 1px #DD793B;
+        box-shadow: inset 1px 1px 1px 1px #DD793B;
     }
 }
 
@@ -510,6 +510,15 @@ section.hero.about{
 }
 
 /*FAQ-about sub-content*/
+
+/*Services page style*/
+section.FAQ {
+    background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
+    background-size: 100% 18%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
 .FAQ-list{
     list-style-type: none;
     padding-left: 0;
@@ -524,13 +533,11 @@ section.hero.about{
 }
 
 .FAQ-header{
-    background-color: #DD793B;
-    color: white;
+    color: #fff7f2;
     padding: 20px 0;
     position: relative;
     z-index: 1;
     text-align: left;
-    width: 100vw;
 }
 
 .FAQ-header h1{ 
