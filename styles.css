@@ -431,6 +431,19 @@ section.rewards ul li p {
     width: 33.3%;
 }
 
+section.rewards p.icon {
+    width: 100px;
+    height: 100px;
+    background-color: #DD793B;
+    color: #fff7f2;
+    font-size: 40px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 /*Services Content*/
 .prices {
 }
@@ -440,6 +453,7 @@ section.hero.about{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
     object-position: inherit;
 }
+
 .paragraph {
     padding: 20px 30px;
     font-size: 2em; 
@@ -482,6 +496,12 @@ section.hero.about{
     margin: 0 auto;
     line-height: 1.2;
     word-spacing: 35px;
+}
+
+/* Mobile Grooming Content */
+section.hero.mobile-grooming {
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/mobile-grooming.jpg");
+    object-position: inherit;
 }
 
 /*FAQ-about sub-content*/
