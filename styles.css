@@ -612,3 +612,10 @@ section.FAQ {
     display: block;
     
 }
+
+/*BOOK NOW style*/
+.book-header{
+    background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/Book-now.jpg");
+    object-position: inherit;   
+    color: #fff7f2;
+}
