@@ -50,7 +50,100 @@
 
         <!-- Use the main area to add the main content of the webpage -->
         <main>
-
+            <!--Discliamer-->
+            <section class="hero-disclaimer">
+                <h1>Disclaimer</h1>
+                <p>We understand that plans change, so we kindly ask for at least 24 hours' 
+                    notice if you need to cancel or reschedule your appointment. Cancellations 
+                    made with less than 24 hours’ notice may be subject to a fee.</p>
+            </section>
+            <!--Location-->
+            <section class="hero-location">
+                <h2>What location are you interested in?</h2>
+                <form class="location-selection">
+                    <label class="location-option">
+                        <input type="radio" name="location" value="mobile-grooming" required>
+                        <span>Mobile-Grooming</span>
+                    </label>
+                    <label class="location-option">
+                        <input type="radio" name="location" value="In Store" required>
+                        <span>In Store</span>
+                    </label>
+                </form>
+            </section>              
+            <!--Booking Information-->
+            <section class ="booking-form">
+                <div class="form-group">
+                    <label for="first-name"> First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dog-name">Pets Name</label>
+                    <p>Sperate names with comma, if you have more than one fur baby</p>
+                    <input type="text" id="dog-name" name=dog-name placeholder="Pets Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dog-breed">Pets Breed</label>
+                    <p>Sperate breeds with comma, if you have more than one breed</p>
+                    <input type="text" id="dog-breed" name=dog-breed placeholder="Pets Breed" required>
+                </div>
+            </section>
+                
+            <!--Services-->
+            <section class="hero-services">
+                <h2>What services you interested in?</h2>
+                <form class="services-selection">
+                    <label class="services-option">
+                        <input type="radio" name="services" value="Basic Bath & Brush" required>
+                        <span>Basic Bath & Brush</span>
+                        
+                    </label>
+                    
+                    <label class="services-option">
+                        <input type="radio" name="services" value="Full Groom" required>
+                        <span>Full Groom</span>
+                    </label>
+                    
+                    <label class="services-option">
+                        <input type="radio" name="services" value="Puppys First Groom" required>
+                        <span>Puppys First Groom</span>
+                    </label>
+                    
+                    <label class="services-option">
+                        <input type="radio" name="services" value="Deshedding Treatment" required>
+                        <span>Deshedding Treatment</span>
+                    </label>
+                    
+                    <label class="services-option">
+                        <input type="radio" name="services" value="Deluxe Spa Package" readonly>
+                        <span>Deluxe Spa Package</span>
+                    </label>
+                </form>
+            </section> 
+            
+            <!-- Submit Button at the Bottom -->
+            <section class="submit-section">
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Book Now</button>
+                </div>
+            </section>
         </main>
         <!-- Use the footer area to add webpage footer content -->
         <footer>
