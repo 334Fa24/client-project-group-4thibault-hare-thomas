@@ -504,6 +504,14 @@ section.hero.mobile-grooming {
     object-position: inherit;
 }
 
+section.mobile-grooming img {
+    width: 100%;
+}
+
+.flex.two-column > * {
+    width: 50%;
+}
+
 /*FAQ-about sub-content*/
 section.FAQ {
     background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
