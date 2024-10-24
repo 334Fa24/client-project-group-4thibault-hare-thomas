@@ -452,6 +452,7 @@ section.rewards p.icon {
 section.hero.about{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
     object-position: inherit;
+    background-size: cover;
 }
 
 .paragraph {
@@ -615,7 +616,10 @@ section.FAQ {
 
 /*BOOK NOW style*/
 .book-header{
-    background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/Book-now.jpg");
+    background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/book-now.jpg");
     object-position: inherit;   
     color: #fff7f2;
+    background-position: center;
+    background-size: contain;
+    text-align: left;
 }
