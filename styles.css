@@ -401,9 +401,23 @@ section.hero h1 {
 section.hero.about{
  background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
 }
+/*BOOK NOW style*/
+section.hero.book {
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/book-now.jpg");
+}
 /*Services page style*/
 section.hero.services {
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/services-header");
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/services-header.jpg");
+}
+
+.round {
+  border-radius: 8px;
+}
+
+.prices {
+    width: 855px;
+    height: 905px;
+    align-content: center;
 }
 
 /* Rewards page style */
@@ -443,9 +457,10 @@ section.rewards p.icon {
     align-items: center;
     justify-content: center;
 }
-
-/*Services Content*/
-.prices {
+/*Contact Styling*/
+section.hero.contact{
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
+    
 }
 
 /*About content*/
@@ -614,12 +629,3 @@ section.FAQ {
     
 }
 
-/*BOOK NOW style*/
-.book-header{
-    background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/book-now.jpg");
-    object-position: inherit;   
-    color: #fff7f2;
-    background-position: center;
-    background-size: contain;
-    text-align: left;
-}
