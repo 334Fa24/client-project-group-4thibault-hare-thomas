@@ -293,6 +293,7 @@ nav, .dropdown{
     text-decoration: none;
 }
 
+
 /* Hover effect for both the dropdown items and the parent */
 .dropdown > a:hover,
 .dropdown ul li a:hover {
@@ -541,6 +542,38 @@ section.hero.about{
     word-spacing: 35px;
 }
 
+/*Desktop for About*/
+@media(max-width: 768px){
+    nav{
+        top: 173px;
+    } 
+    
+    .Paragraph{
+        text-align: center;
+    }
+    
+    .about{
+        text-overflow: ellipsis;
+    }   
+    
+    .about p{
+        text-align: center;
+    }
+    
+    .about h2{
+        text-align: center;
+    }
+    
+    .about-motto h2{
+        text-align: center;
+    }
+    
+    .about-motto P{
+        text-align: center;
+        font-size: large;
+    }
+}
+
 /* Mobile Grooming Content */
 section.hero.mobile-grooming {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/mobile-grooming.jpg");
@@ -591,7 +624,7 @@ section.FAQ {
     max-width: 1200px;
 }
 
-/*INDEX-main & reviews style*/
+/*INDEX Main styles*/
 .slideshow-container{
     position: relative;
     max-width: 600px;
@@ -657,11 +690,72 @@ section.FAQ {
 }
 
 section.rewards-home {
-    background-color: #DD793B;
+    background-color: #521f01;
     color: #fff7f2;
     padding-right: 52.5%;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('images/pug-gradient-map.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+section.rewards-home img {
+    display: none;
 }
 
 section.rewards-home h2 {
-    margin-top: 0;
+    margin: 0;
+    font-size: 64px;
+}
+
+section.rewards-home p {
+    font-weight: 300;
+    margin-bottom: 36px;
+    max-width: 550px;
+}
+
+a.btn {
+    display: inline-block;
+    border: 1px #fff7f2 solid;
+    border-radius: 5px;
+    padding: 24px 34px;
+}
+
+a.btn:first-of-type {
+    background-color: #DD793B;
+    border-color: #DD793B;
+    color: #fff7f2;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+@media(max-width: 1080px) {
+    section.rewards-home {
+        background-image: url('images/pug-gradient-map-tablet.jpg');
+    }
+}
+@media(max-width: 939px) {
+    section.rewards-home {
+        background-image: none;
+        padding-right: 30px;
+    }
+
+    section.rewards-home img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 25px;
+        padding: 0;
+        border-radius: 5px;
+    }
+
+    section.rewards-home p {
+        max-width: none;
+    }
 }
