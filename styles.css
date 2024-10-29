@@ -597,7 +597,7 @@ section.FAQ {
     max-width: 1200px;
 }
 
-/*INDEX-main & reviews style*/
+/*INDEX Main styles*/
 .slideshow-container{
     position: relative;
     max-width: 600px;
@@ -718,6 +718,7 @@ a.btn:first-of-type {
         background-image: none;
         padding-right: 30px;
     }
+
     section.rewards-home img {
         display: block;
         width: 100%;
@@ -725,5 +726,9 @@ a.btn:first-of-type {
         margin-bottom: 25px;
         padding: 0;
         border-radius: 5px;
+    }
+
+    section.rewards-home p {
+        max-width: none;
     }
 }
