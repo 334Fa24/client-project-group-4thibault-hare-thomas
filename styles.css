@@ -578,7 +578,7 @@ section.FAQ {
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
     border: 1px solid;
 }
 
@@ -629,3 +629,12 @@ section.FAQ {
     
 }
 
+section.rewards-home {
+    background-color: #DD793B;
+    color: #fff7f2;
+    padding-right: 52.5%;
+}
+
+section.rewards-home h2 {
+    margin-top: 0;
+}
