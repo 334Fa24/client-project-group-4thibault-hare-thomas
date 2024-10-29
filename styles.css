@@ -416,9 +416,36 @@ section.hero.services {
 }
 
 .prices {
-    width: 855px;
-    height: 905px;
-    align-content: center;
+    width: 87%;
+    height: 87%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.long-line {
+    border: 1px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+.long-line2 {
+    border: 1px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.short-line {
+    border: 1px solid black;
+    width: 23%;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 /* Rewards page styles */
