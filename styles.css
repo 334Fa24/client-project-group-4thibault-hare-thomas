@@ -293,6 +293,7 @@ nav, .dropdown{
     text-decoration: none;
 }
 
+
 /* Hover effect for both the dropdown items and the parent */
 .dropdown > a:hover,
 .dropdown ul li a:hover {
@@ -512,6 +513,38 @@ section.hero.about{
     margin: 0 auto;
     line-height: 1.2;
     word-spacing: 35px;
+}
+
+/*Desktop for About*/
+@media(max-width: 768px){
+    nav{
+        top: 173px;
+    } 
+    
+    .Paragraph{
+        text-align: center;
+    }
+    
+    .about{
+        text-overflow: ellipsis;
+    }   
+    
+    .about p{
+        text-align: center;
+    }
+    
+    .about h2{
+        text-align: center;
+    }
+    
+    .about-motto h2{
+        text-align: center;
+    }
+    
+    .about-motto P{
+        text-align: center;
+        font-size: large;
+    }
 }
 
 /* Mobile Grooming Content */
