@@ -395,6 +395,12 @@ section.hero {
     text-shadow: 1px 1px 5px rgba(61, 55, 47, 0.5);
 }
 
+@media(max-width: 768px) {
+    section.hero {
+        font-size: 36px!important;
+    }
+}
+
 section.hero h1 {
     margin: 0;
 }
@@ -453,8 +459,14 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-section.rewards ul {
-    list-style-position: inside;
+section.rewards h2 {
+    margin-top: 0;
+    font-size: 38px;
+    text-align: center;
+}
+
+section.rewards h3 {
+    margin-bottom: 25px;
 }
 
 .terms-conditions {
@@ -465,12 +477,17 @@ section.rewards ul {
     margin: 0 0 4px 0;
 }
 
-section.rewards ul li p {
-    display: inline-block;
+section.rewards ul {
+    margin-left: 30px;
+}
+
+section.rewards .flex.three-column, section.rewards .perks {
+    margin-bottom: 38px;
+    padding: 30px;
 }
 
 .flex.three-column > * {
-    width: 33.3%;
+    width: calc(90% / 3);
 }
 
 section.rewards .flex.three-column > div {
@@ -493,8 +510,19 @@ section.rewards p.icon {
     margin-bottom: 25px;
 }
 
-section.rewards h3 {
-    margin-bottom: 25px;
+section.rewards .perks {
+    background-color: #ede8e2;
+}
+
+@media(max-width: 768px) {
+    section.rewards .flex.three-column {
+        display: block;
+    }
+    section.rewards .flex.three-column > div {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
 }
 
 /*Contact Styling*/
@@ -654,7 +682,7 @@ section.FAQ {
     border: 1px solid;
 }
 
-.prev, next{
+.prev, .next{
     cursor: pointer;
     position: absolute;
     top: 50%;
