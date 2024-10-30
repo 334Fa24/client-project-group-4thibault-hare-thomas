@@ -656,6 +656,11 @@ section.FAQ {
     overflow: hidden;
 }
 
+.slides-wrapper{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
 /*INDEX- reviews style*/
 .slide-container{
     max-width: 1000px;
@@ -665,54 +670,49 @@ section.FAQ {
     text-align: center;
 }
 .review-slide{
+    min-width: 100%;
     display: none;
     text-align: center;
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
     background-color: #fff6f2;
-    border: 1px solid #DD793B;
-    border-radius: 8px;
 }
 
 .review-slide01{
+    min-width: 100%;
     text-align: center;
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
     background-color: #fff6f2;
-    border: 1px solid #DD793B;
-    border-radius: 8px;
 }
 
 .review-slide02{
+    min-width: 100%;
     text-align: center;
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
     background-color: #fff6f2;
-    border: 1px solid #DD793B;
-    border-radius: 8px;
 }
 
 .review-slide03{
+    min-width: 100%;
     text-align: center;
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
     background-color: #fff6f2;
-    border: 1px solid #DD793B;
-    border-radius: 8px;
 }
 
 .review-slide04{
+    min-width: 100%;
     text-align: center;
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
     background-color: #fff6f2;
-    border: 1px solid #DD793B;
-    border-radius: 8px;
 }
 
 .review-slide:first-child{
