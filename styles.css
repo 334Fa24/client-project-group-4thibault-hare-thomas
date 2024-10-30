@@ -471,7 +471,7 @@ section.hero.about{
     background-size: cover;
 }
 
-.paragraph {
+.Paragraph {
     padding: 20px 30px;
     font-size: 2em; 
     line-height: 1.6; 
@@ -479,6 +479,7 @@ section.hero.about{
     text-align: center;
     background-color: #fff7f2;
     margin: 0;
+    border-bottom: 5px solid #DD793B;
 }
 
 .about, .about-motto {
@@ -499,14 +500,14 @@ section.hero.about{
     font-size: 1.5em;
 }
 
-.about-motto {
+.about-motto h2{
     background-color: #fff7f2;
     color:#3D372F;
     padding: 20px 30px;
     margin: 0;
 }
 
-.about-motto p {
+.about-motto h1 {
     font-size: 2em;
     color:#DD793B;
     text-align: center;
@@ -515,7 +516,7 @@ section.hero.about{
     word-spacing: 35px;
 }
 
-/*Desktop for About*/
+/*Mobile-Tablet for About*/
 @media(max-width: 768px){
     nav{
         top: 173px;
@@ -539,11 +540,13 @@ section.hero.about{
     
     .about-motto h2{
         text-align: center;
+        font-size: 30px;
     }
     
-    .about-motto P{
+    .about-motto h1{
         text-align: center;
-        font-size: large;
+        font-size: 30px;
+        
     }
 }
 
@@ -597,44 +600,96 @@ section.FAQ {
     max-width: 1200px;
 }
 
-/*INDEX-main & reviews style*/
-.slideshow-container{
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-}
+/*FAQ Mobile content-Tablet*/
 
+
+/*INDEX-main & reviews style*/
+
+.slide-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
 .review-slide{
     display: none;
     text-align: center;
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff7f2;
-    border: 1px solid;
+    background-color: #fff6f2;
+    border: 1px solid #DD793B;
+    border-radius: 8px;
 }
 
-.prev, next{
+.review-slide01{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #DD793B;
+    background-color: #fff6f2;
+    border: 1px solid #DD793B;
+    border-radius: 8px;
+}
+
+.review-slide02{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #DD793B;
+    background-color: #fff6f2;
+    border: 1px solid #DD793B;
+    border-radius: 8px;
+}
+
+.review-slide03{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #DD793B;
+    background-color: #fff6f2;
+    border: 1px solid #DD793B;
+    border-radius: 8px;
+}
+
+.review-slide04{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #DD793B;
+    background-color: #fff6f2;
+    border: 1px solid #DD793B;
+    border-radius: 8px;
+}
+
+.review-slide:first-child{
+    display: block;
+}
+
+.prev, .next{
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
     margin-top: -22px;
-    color: #333;
+    padding: 16px;
+    color: #DD793B;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    user-select: none;
+    border-radius: 50%;
+    user-select: none;    
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
 }
 
 .prev{
-    left: 0;
+    left: 10px;
 }
 
 .next{
-    right: 0;
+    right: 10px;
 }
 
 .dots-container{
@@ -653,13 +708,97 @@ section.FAQ {
     transition: background-color 0.6s ease;
 }
 
-.active, dot:hover{
-    background-color: #DD793B;
+.active, .dot:hover{
+    background-color: #DD793B;    
 }
 
-.review-slide:first-child{
-    display: block;
-    
+/*Overall Review Style*/
+.review-slide{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;
+}
+
+.review-slide01{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;
+}
+
+.review-slide02{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;
+}
+
+.review-slide03{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;
+}
+
+.review-slide04{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;
+}
+
+.review-slide p{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;  
+}
+
+.review-slide01 p{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;  
+}
+
+.review-slide02 p{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;  
+}
+
+.review-slide03 p{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;  
+}
+
+.review-slide04 p{
+    font-size: 14px;
+    color: #DD793B;
+    margin: 0;  
+}
+.review-slide{
+    width: 88%;
+    margin: auto;
+}
+
+.review-slide01{
+    width: 88%;
+    margin: auto;
+}
+
+.review-slide02{
+    width: 88%;
+    margin: auto;
+}
+
+.review-slide03{
+    width: 88%;
+    margin: auto;
+}
+
+.review-slide04{
+    width: 88%;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 section.rewards-home {
