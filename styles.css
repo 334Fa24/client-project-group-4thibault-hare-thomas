@@ -468,7 +468,7 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-section.rewards h2 {
+section.rewards h2, section#join h2 {
     margin-top: 0;
     font-size: 38px;
     text-align: center;
@@ -493,6 +493,8 @@ section.rewards ul {
 section.rewards .flex.three-column, section.rewards .perks {
     margin-bottom: 38px;
     padding: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .flex.three-column > * {
@@ -521,16 +523,24 @@ section.rewards p.icon {
 
 section.rewards .perks {
     background-color: #ede8e2;
+    padding: 30px;
 }
 
 @media(max-width: 768px) {
     section.rewards .flex.three-column {
         display: block;
+        padding: 0;
     }
     section.rewards .flex.three-column > div {
         width: 100%;
         align-items: flex-start;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
+    }
+    section.rewards h2, section#join h2 {
+        text-align: left;
+    }
+    section.rewards h3 {
+        margin-bottom: 10px;
     }
 }
 
