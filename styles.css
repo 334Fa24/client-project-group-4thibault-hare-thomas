@@ -27,6 +27,15 @@ ul {
     justify-content: space-between;
 }
 
+.paragraph {
+    padding: 20px 30px;
+    font-size: 2em; 
+    line-height: 1.6; 
+    color: #3D372F;
+    background-color: #fff7f2;
+    margin: 0;
+}
+
 /* Desktop Footer Styling */
 footer {
     background-color: #3D372F;
@@ -510,15 +519,6 @@ section.hero.about{
     background-size: cover;
 }
 
-.paragraph {
-    padding: 20px 30px;
-    font-size: 2em; 
-    line-height: 1.6; 
-    color: #3D372F;
-    text-align: center;
-    background-color: #fff7f2;
-    margin: 0;
-}
 
 .about, .about-motto {
     background-color: #fff7f2;
@@ -559,10 +559,6 @@ section.hero.about{
     nav{
         top: 173px;
     } 
-    
-    .Paragraph{
-        text-align: center;
-    }
     
     .about{
         text-overflow: ellipsis;
