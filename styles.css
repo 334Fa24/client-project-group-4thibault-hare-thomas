@@ -27,6 +27,15 @@ ul {
     justify-content: space-between;
 }
 
+.paragraph {
+    padding: 20px 30px;
+    font-size: 2em; 
+    line-height: 1.6; 
+    color: #3D372F;
+    background-color: #fff7f2;
+    margin: 0;
+}
+
 /* Desktop Footer Styling */
 footer {
     background-color: #3D372F;
@@ -416,12 +425,39 @@ section.hero.services {
 }
 
 .prices {
-    width: 855px;
-    height: 905px;
-    align-content: center;
+    width: 87%;
+    height: 87%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.long-line {
+    border: 1px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 35px;
 }
 
-/* Rewards page style */
+.long-line2 {
+    border: 1px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.short-line {
+    border: 1px solid black;
+    width: 23%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Rewards page styles */
 section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
@@ -446,6 +482,12 @@ section.rewards ul li p {
     width: 33.3%;
 }
 
+section.rewards .flex.three-column > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start
+}
+
 section.rewards p.icon {
     width: 100px;
     height: 100px;
@@ -457,7 +499,13 @@ section.rewards p.icon {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 25px;
 }
+
+section.rewards h3 {
+    margin-bottom: 25px;
+}
+
 /*Contact Styling*/
 section.hero.contact{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
@@ -471,6 +519,7 @@ section.hero.about{
     background-size: cover;
 }
 
+<<<<<<< HEAD
 .Paragraph {
     padding: 20px 30px;
     font-size: 2em; 
@@ -481,6 +530,8 @@ section.hero.about{
     margin: 0;
     border-bottom: 5px solid #DD793B;
 }
+=======
+>>>>>>> 63362dca1742eef541071375c23325a0481ce33e
 
 .about, .about-motto {
     background-color: #fff7f2;
@@ -521,10 +572,6 @@ section.hero.about{
     nav{
         top: 173px;
     } 
-    
-    .Paragraph{
-        text-align: center;
-    }
     
     .about{
         text-overflow: ellipsis;
@@ -601,10 +648,15 @@ section.FAQ {
 }
 
 /*FAQ Mobile content-Tablet*/
+/*INDEX Main styles*/
+.slideshow-container{
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
 
-
-/*INDEX-main & reviews style*/
-
+/*INDEX- reviews style*/
 .slide-container{
     max-width: 1000px;
     position: relative;
@@ -802,11 +854,72 @@ section.FAQ {
 }
 
 section.rewards-home {
-    background-color: #DD793B;
+    background-color: #521f01;
     color: #fff7f2;
     padding-right: 52.5%;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('images/pug-gradient-map.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+section.rewards-home img {
+    display: none;
 }
 
 section.rewards-home h2 {
-    margin-top: 0;
+    margin: 0;
+    font-size: 64px;
+}
+
+section.rewards-home p {
+    font-weight: 300;
+    margin-bottom: 36px;
+    max-width: 550px;
+}
+
+a.btn {
+    display: inline-block;
+    border: 1px #fff7f2 solid;
+    border-radius: 5px;
+    padding: 24px 34px;
+}
+
+a.btn:first-of-type {
+    background-color: #DD793B;
+    border-color: #DD793B;
+    color: #fff7f2;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+@media(max-width: 1080px) {
+    section.rewards-home {
+        background-image: url('images/pug-gradient-map-tablet.jpg');
+    }
+}
+@media(max-width: 939px) {
+    section.rewards-home {
+        background-image: none;
+        padding-right: 30px;
+    }
+
+    section.rewards-home img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 25px;
+        padding: 0;
+        border-radius: 5px;
+    }
+
+    section.rewards-home p {
+        max-width: none;
+    }
 }
