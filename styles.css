@@ -656,9 +656,40 @@ section.FAQ {
     overflow: hidden;
 }
 
-.slides-wrapper{
+/*Index Clean Fur Bold Style*/
+.fur-header{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke:1.5px  #DD793B;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main{
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+text-container p{
+    font-size: 16px;
+    color: #DD793B;
+    text-align: center;
+}
+
+.happy-dog-img{
+    max-width: 40%;
+    height: auto;
+    margin-left: 10px;
+    
 }
 
 /*INDEX- reviews style*/
@@ -762,6 +793,12 @@ section.FAQ {
 
 .active, .dot:hover{
     background-color: #DD793B;    
+}
+
+
+.slides-wrapper{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 /*Overall Review Style*/
