@@ -51,7 +51,7 @@
         <!-- Use the main area to add the main content of the webpage -->
         <main>
             <!--CLEAN FUR BOLD SPIRIT of home page-->
-            <section class="hero-main">
+            <section class="main">
                 <h1>CLEAN FUR BOLD SPIRIT</h1>
                 <p>Furry Fresh Grooming is a full-service dog grooming salon dedicated to pampering your pooch
                     Our mission is to provide a stress-free, enjoyable experience for dogs and their owners.
@@ -111,36 +111,34 @@
             
            <!-- Reviews section of home page--> 
             <section class="review-slideshow">
-                <div class="review-slide">
-                    <h3>Furry Fresh Grooming is dedicated to providing a top-notch grooming experience that 
-                        leaves every dog looking fabulous and feeling fantastic.</h3>   
-                
-                <div class="review-slide01">
-                    <p>"Furry Fresh Grooming made my dog feel like a star! 
+                <div class="slide-container">
+                    <div class="review-slide">
+                        <h3>Furry Fresh Grooming is dedicated to providing a top-notch grooming experience that 
+                        leaves every dog looking fabulous and feeling fantastic.</h3>  
+                    </div>
+                    <div class="review-slide01">
+                        <p>"Furry Fresh Grooming made my dog feel like a star! 
                         The groomers were so patient with my nervous pup."</p>
-                    <h4>– Emily R.</h4>
-                </div>
-                
-                <div class="review-slide02">
-                    <p>"My Golden Retriever has never looked better. I love the mobile service!"</p>
-                    <h4>– James K</h4>
-                </div>
-                
-                <div class="review-slide03">
-                    <p>"Great service and friendly staff. My dog always looks great after a grooming session."</p>
-                    <h4>- Michael R.</h4>
-                </div>
+                        <h4>– Emily R.</h4>
+                    </div>
+                    <div class="review-slide02">
+                        <p>"My Golden Retriever has never looked better. I love the mobile service!"</p>
+                        <h4>– James K</h4>
+                    </div>
+                    <div class="review-slide03">
+                        <p>"Great service and friendly staff. My dog always looks great after a grooming session."</p>
+                        <h4>- Michael R.</h4>
+                    </div>
                     <!-- Navigation Buttons-->
-                    <a class="prev" onclick="plusSides(-1)">&#10094;</a>
-                    <a class="prev" onclick="plusSides(-1)">&#10095;</a>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                
-                        <!--Dots Button-->
+                    <!--Dots Button-->
                 <div class="dots-container">
-                    <span class="dot" onclick="currentSlide"></span>
-                    <span class="dot" onclick="currentSlide01"></span>
-                    <span class="dot" onclick="currentSlide02"></span>
-                    <span class="dot" onclick="currentSlide03"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>                     
             </section>
             <section class="rewards-home">
