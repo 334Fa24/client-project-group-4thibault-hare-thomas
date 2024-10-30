@@ -101,19 +101,24 @@
             <section id="join">
                 <h2>Join Rewards</h2>
                 <p>Please fill in this form to create an account.</p>
+                <p><span class="red">*</span> indicates a required field.</p>
                 <form>
-                    <label for="fName">First Name:</label>
-                    <input type="text" name="fName" id="fName" required="">
-
-                    <label for="lName">Last Name:</label>
-                    <input type="text" name="lName" id="lName" required=""> 
-                        
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required="">
-                        
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required="">
-
+                    <p>
+                        <label for="fName"><span class="red">*</span> First Name</label>
+                        <input type="text" name="fName" id="fName" required="" placeholder="First Name">
+                    </p>
+                    <p>
+                        <label for="lName"><span class="red">*</span> Last Name</label>
+                        <input type="text" name="lName" id="lName" required="" placeholder="Last Name"> 
+                    </p>
+                    <p>
+                        <label for="email"><span class="red">*</span> Email</label>
+                        <input type="email" name="email" id="email" required="" placeholder="Email Address">
+                    </p>
+                    <p>
+                        <label for="phone"><span class="red">*</span> Phone</label>
+                        <input type="tel" id="phone" name="phone" required="" placeholder="Phone Number">
+                    </p>
                     <input type="submit" id="submit" value="Submit" class="btn">            
                 </form>
             </section>
