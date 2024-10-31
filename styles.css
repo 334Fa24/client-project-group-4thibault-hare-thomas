@@ -471,10 +471,6 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-section.rewards {
-    padding-bottom: 0;
-}
-
 section.rewards h2, section#join h2, section.perks h2 {
     margin-top: 0;
     font-size: 38px;
@@ -489,11 +485,8 @@ section.rewards ul, section.perks ul, section.terms-conditions ul {
     margin-left: 30px;
 }
 
-section.rewards .flex.three-column, section.perks {
-    margin-bottom: 38px;
-    padding: 30px;
-    padding-top: 0;
-    padding-bottom: 0;
+section.rewards .flex.three-column {
+    padding: 0 30px;
 }
 
 section.rewards .flex.three-column > div:last-child {
@@ -710,8 +703,21 @@ section.mobile-grooming img {
     width: 100%;
 }
 
+.flex.two-column {
+    flex-wrap: wrap;
+}
+
 .flex.two-column > * {
-    width: 50%;
+    width: 48.5%;
+}
+
+@media(max-width: 768px) {
+    .flex.two-column {
+        flex-direction: column;
+    }
+    .flex.two-column > * {
+        width: 100%;
+    }
 }
 
 /*FAQ-about sub-content*/
