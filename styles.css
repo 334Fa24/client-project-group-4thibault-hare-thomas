@@ -749,7 +749,6 @@ section.terms-conditions h4 {
     border-radius: 4px;
 }
 
-/* Services checkboxes styling */
 .services-selection label {
     display: flex;
     align-items: center;
@@ -868,6 +867,41 @@ section.hero.about{
     word-spacing: 35px;
 }
 
+/* Mobile Styles for Book Now Page */
+@media (max-width: 768px) {
+    /* Hero Header and Disclaimer */
+    .hero-book h1 {
+        font-size: 36px;
+    }
+
+    /* Form Sections */
+    .hero-disclaimer, .hero-location, .booking-form, .hero-services, .submit-section {
+        padding: 15px;
+    }
+
+    /* Stack Radio and Checkbox Options Vertically */
+    .location-selection, .services-selection {
+        flex-direction: column;
+    }
+
+    /* Adjust Form Field Margins and Padding */
+    .form-group input[type="text"], 
+    .form-group input[type="email"], 
+    .form-group input[type="tel"],
+    .form-group input[type="radio"],
+    .form-group input[type="checkbox"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Adjust Button for Mobile */
+    .submit-section .submit-btn {
+        font-size: 18px;
+        padding: 12px;
+        width: 100%;
+    }
+}
+
 /*Mobile-Tablet for About*/
 @media(max-width: 768px){
     .about{
@@ -967,6 +1001,46 @@ section.FAQ {
 }
 
 /*FAQ Mobile content-Tablet*/
+@media (max-width: 768px) {
+    .FAQ-header h1 {
+        font-size: 28px;
+    }
+
+    .FAQ-list h3 {
+        font-size: 1.1em;
+    }
+
+    .FAQ-list p {
+        font-size: 0.95em;
+    }
+
+    /* Align main content flex layout vertically */
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    /* Responsive adjustments for text and image */
+    .text-container {
+        max-width: 90%; /* Full width on mobile */
+        text-align: center;
+    }
+
+    .text-container p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .happy-dog-img {
+        max-width: 70%;
+        margin: 10px auto;
+    }
+    
+    .caq{
+        display: none;
+    }
+}
 /*INDEX Main styles*/
 .slideshow-container{
     position: relative;
@@ -1011,47 +1085,6 @@ section.FAQ {
     margin-left: 10px;   
 }
 
-/* Mobile Faq Style */
-@media (max-width: 768px) {
-    .FAQ-header h1 {
-        font-size: 28px;
-    }
-
-    .FAQ-list h3 {
-        font-size: 1.1em;
-    }
-
-    .FAQ-list p {
-        font-size: 0.95em;
-    }
-
-    /* Align main content flex layout vertically */
-    .main {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    /* Responsive adjustments for text and image */
-    .text-container {
-        max-width: 90%; /* Full width on mobile */
-        text-align: center;
-    }
-
-    .text-container p {
-        font-size: 14px;
-        padding: 10px 0;
-    }
-
-    .happy-dog-img {
-        max-width: 70%;
-        margin: 10px auto;
-    }
-    
-    .caq{
-        display: none;
-    }
-}
 /*INDEX- reviews style*/
 
 .slide-container{
