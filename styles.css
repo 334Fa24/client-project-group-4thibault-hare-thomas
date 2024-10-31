@@ -471,6 +471,10 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
+section.rewards {
+    padding-bottom: 0;
+}
+
 section.rewards h2, section#join h2, section.perks h2 {
     margin-top: 0;
     font-size: 38px;
@@ -585,7 +589,6 @@ section#join .red {
     section.rewards .flex.three-column {
         display: block;
         padding: 0;
-        margin-bottom: 15px;
     }
     section.rewards .flex.three-column > div {
         width: 100%;
