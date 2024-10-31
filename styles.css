@@ -43,6 +43,85 @@ ul {
     margin: 0;
 }
 
+.red {
+    color: #d00000;
+}
+
+/* Global form styles */
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form > * {
+    width: 48.5%;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+form > #submit {
+    width: inherit;
+    margin: inherit;
+}
+
+form label, form > p > input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form label, .form-container > p {
+    margin-bottom: 6px;
+}
+
+form input {
+    padding: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+form input#submit {
+    background-color: #DD793B;
+    color: #fff7f2;
+    padding: 16px 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form fieldset {
+    height: fit-content;
+}
+
+form textarea {
+    width: -webkit-fill-available;
+    resize: none;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    font-size: 38px;
+    text-align: center;
+}
+
+.form-container > p:last-of-type {
+    margin-bottom: 25px;
+}
+
+@media(max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+    form > * {
+        width: 100%;
+    }
+    .form-container h2 {
+        text-align: left;
+    }
+}
+
 /* Desktop Footer Styling */
 footer {
     background-color: #3D372F;
@@ -480,7 +559,7 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-section.rewards h2, section#join h2, section.perks h2 {
+section.rewards h2, section.perks h2 {
     margin-top: 0;
     font-size: 38px;
     text-align: center;
@@ -539,50 +618,6 @@ section.terms-conditions h4 {
     margin: 0 0 4px 0;
 }
 
-section#join form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-section#join form > p {
-    width: 48.5%;
-    margin-bottom: 25px;
-}
-
-section#join form label, section#join form > p > input {
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-section#join form label, section#join > p {
-    margin-bottom: 6px;
-}
-
-section#join > p:last-of-type {
-    margin-bottom: 25px;
-}
-
-section#join form input {
-    padding: 16px;
-    border-radius: 5px;
-    border: none;
-}
-
-section#join form input#submit {
-    background-color: #DD793B;
-    color: #fff7f2;
-    padding: 16px 32px;
-    font-weight: 600;
-}
-
-section#join .red {
-    color: #d00000;
-}
-
 @media(max-width: 768px) {
     section.rewards .flex.three-column {
         display: block;
@@ -593,7 +628,7 @@ section#join .red {
         align-items: flex-start;
         margin-bottom: 40px;
     }
-    section.rewards h2, section#join h2, section.perks h2 {
+    section.rewards h2, section.perks h2 {
         text-align: left;
     }
     section.rewards h3 {
@@ -601,12 +636,6 @@ section#join .red {
     }
     section.perks {
         margin: 0;
-    }
-    section#join form {
-        flex-direction: column;
-    }
-    section#join form > p {
-        width: 100%;
     }
 }
 
