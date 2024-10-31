@@ -1,14 +1,21 @@
 /* Names: Aaron Hare, Alyna Thibault, Mariah Thomas */
 
 /* Global CSS */
+* {
+    font-family: 'Inter';
+}
+
 body, p, h3 {
     margin: 0;
     padding: 0;
-    font-family: 'Inter';
 }
 
 body {
     background-color: #fff7f2;
+}
+
+h2, h3, h4 {
+    margin-top: 0;
 }
 
 a {
@@ -17,7 +24,7 @@ a {
 }
 
 ul {
-    margin: 0;
+    margin: 0 0 0 30px;
     padding: 0;   
 }
 
@@ -25,15 +32,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.paragraph {
-    padding: 20px 30px;
-    font-size: 2em; 
-    line-height: 1.6; 
-    color: #3D372F;
-    background-color: #fff7f2;
-    margin: 0;
 }
 
 /* Desktop Footer Styling */
@@ -100,6 +98,10 @@ footer .payment-methods li {
 
 footer .payment-methods li:last-child {
     margin-right: 0;
+}
+
+footer ul.socials {
+    margin: 0;
 }
 
 footer .socials img {
@@ -239,6 +241,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
+    margin: 0;
 }
 
 nav li a {
@@ -404,6 +407,12 @@ section.hero {
     text-shadow: 1px 1px 5px rgba(61, 55, 47, 0.5);
 }
 
+@media(max-width: 768px) {
+    section.hero {
+        font-size: 36px!important;
+    }
+}
+
 section.hero h1 {
     margin: 0;
 }
@@ -418,6 +427,27 @@ section.hero.book {
 /*Services page style*/
 section.hero.services {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/services-header.jpg");
+}
+.services {
+    background-color: #fff7f2;
+    line-height: 1.6;  
+    padding: 20px 30px;
+    margin: 0;
+    
+}
+
+.services p {
+    padding-top: 15px;
+    font-size: 1.5em;
+}
+
+.services h3 {
+    padding-top: 30px;
+    font-size: 1.7em;
+}
+
+.services h4 {
+    font-size: 2.5em;
 }
 
 .round {
@@ -439,22 +469,39 @@ section.hero.services {
     margin-left: auto;
     margin-right: auto;
     margin-top: 45px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .long-line2 {
     border: 1px solid black;
     width: 100%;
-    margin-left: auto;
+    margin-left: 100;
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 35px;
 }
+
 .short-line {
     border: 1px solid black;
     width: 23%;
     margin-left: 0;
     margin-right: auto;
+    margin-top: 10px;
+}
+
+.learn-btn {
+    background-color: #DD793B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    
 }
 
 /* Rewards page styles */
@@ -462,24 +509,26 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-section.rewards ul {
-    list-style-position: inside;
+section.rewards h2, section#join h2, section.perks h2 {
+    margin-top: 0;
+    font-size: 38px;
+    text-align: center;
 }
 
-.terms-conditions {
-    font-size: 14px;
+section.rewards h3 {
+    margin-bottom: 25px;
 }
 
-.terms-conditions h4 {
-    margin: 0 0 4px 0;
+section.rewards .flex.three-column {
+    padding: 0 30px;
 }
 
-section.rewards ul li p {
-    display: inline-block;
+section.rewards .flex.three-column > div:last-child {
+    margin-bottom: 0;
 }
 
 .flex.three-column > * {
-    width: 33.3%;
+    width: calc(90% / 3);
 }
 
 section.rewards .flex.three-column > div {
@@ -502,7 +551,32 @@ section.rewards p.icon {
     margin-bottom: 25px;
 }
 
-section.rewards h3 {
+section.perks, section#join {
+    background-color: #ede8e2;
+    padding: 30px;
+}
+
+section.perks {
+    margin: 0 30px;
+}
+
+section.terms-conditions {
+    font-size: 14px;
+}
+
+section.terms-conditions h4 {
+    margin: 0 0 4px 0;
+}
+
+section#join form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#join form > p {
+    width: 48.5%;
     margin-bottom: 25px;
 }
 
@@ -607,17 +681,106 @@ section.rewards h3 {
 }
 
 /*Contact Styling*/
+section#join form label, section#join form > p > input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+section#join form label, section#join > p {
+    margin-bottom: 6px;
+}
+
+section#join > p:last-of-type {
+    margin-bottom: 25px;
+}
+
+section#join form input {
+    padding: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+section#join form input#submit {
+    background-color: #DD793B;
+    color: #fff7f2;
+    padding: 16px 32px;
+    font-weight: 600;
+}
+
+section#join .red {
+    color: #d00000;
+}
+
+@media(max-width: 768px) {
+    section.rewards .flex.three-column {
+        display: block;
+        padding: 0;
+    }
+    section.rewards .flex.three-column > div {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    section.rewards h2, section#join h2, section.perks h2 {
+        text-align: left;
+    }
+    section.rewards h3 {
+        margin-bottom: 10px;
+    }
+    section.perks {
+        margin: 0;
+    }
+    section#join form {
+        flex-direction: column;
+    }
+    section#join form > p {
+        width: 100%;
+    }
+}
+
+/*Contact Page Styling*/
 section.hero.contact{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
     
 }
 
+.contact h1{
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.contact h4 {
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+.tel-link {
+    display: none;
+}
+
+.tel-num {
+    display: block;
+    color: #49ACF8; 
+}
+
+.contact-email-link {
+    color: #49ACF8;
+    font-size: 1em;
+}
+
+.map-contact {
+    margin-left: 450px;
+    margin-top: -270px;
+    margin-bottom: 50px;
+}
 /*About content*/
 section.hero.about{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
     object-position: inherit;
     background-size: cover;
 }
+
 
 .Paragraph {
     padding: 20px 30px;
@@ -627,7 +790,7 @@ section.hero.about{
     text-align: center;
     background-color: #fff7f2;
     margin: 0;
-    border-bottom: 5px solid #DD793B;
+    border-bottom: 2px solid black;
 }
 
 .about, .about-motto {
@@ -666,10 +829,6 @@ section.hero.about{
 
 /*Mobile-Tablet for About*/
 @media(max-width: 768px){
-    nav{
-        top: 173px;
-    } 
-    
     .about{
         text-overflow: ellipsis;
     }   
@@ -700,12 +859,36 @@ section.hero.mobile-grooming {
     object-position: inherit;
 }
 
+section.mobile-grooming > p {
+    margin-bottom: 36px;
+}
+
 section.mobile-grooming img {
     width: 100%;
 }
 
+.flex.two-column {
+    align-items: center;
+    margin-bottom: 36px;
+}
+
 .flex.two-column > * {
-    width: 50%;
+    width: 48.5%;
+}
+
+@media(max-width: 768px) {
+    .flex.two-column {
+        flex-direction: column;
+    }
+    section.mobile-grooming .flex.two-column:first-of-type {
+        flex-direction: column-reverse;
+    }
+    .flex.two-column > * {
+        width: 100%;
+    }
+    .flex.two-column img {
+        margin-bottom: 15px;
+    }
 }
 
 /*FAQ-about sub-content*/
@@ -719,6 +902,7 @@ section.FAQ {
 .FAQ-list{
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .FAQ-list li{
@@ -804,7 +988,7 @@ section.FAQ {
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide01{
@@ -813,7 +997,7 @@ section.FAQ {
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide02{
@@ -822,7 +1006,7 @@ section.FAQ {
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide03{
@@ -831,7 +1015,7 @@ section.FAQ {
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide04{
@@ -840,7 +1024,7 @@ section.FAQ {
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide:first-child{
@@ -981,10 +1165,6 @@ section.FAQ {
 .review-slide04{
     width: 88%;
     margin: auto;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 section.rewards-home {
