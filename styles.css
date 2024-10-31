@@ -782,7 +782,7 @@ section.hero.about{
 }
 
 
-.Paragraph {
+.paragraph {
     padding: 20px 30px;
     font-size: 2em; 
     line-height: 1.6; 
@@ -790,7 +790,7 @@ section.hero.about{
     text-align: center;
     background-color: #fff7f2;
     margin: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #DD793B;
 }
 
 .about, .about-motto {
