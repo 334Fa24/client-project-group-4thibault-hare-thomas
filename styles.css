@@ -596,8 +596,6 @@ section#join form > p {
     background-color: #fff7f2;
     padding: 15px;
     margin-bottom: 20px;
-    width: 100%;
-    border: 1px solid #DD793B;
 }
 
 .hero-disclaimer h2 {
@@ -639,9 +637,7 @@ section#join form > p {
     color: #3D372F;
 }
 
-.booking-form input[type="text"], 
-.booking-form input[type="tel"], 
-.booking-form input[type="email"] {
+.booking-form input[type="text"], .booking-form input[type="tel"], .booking-form input[type="email"] {
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -677,7 +673,8 @@ section#join form > p {
 }
 
 .submit-btn:hover {
-    background-color: #3D372F;
+    color: #DD793B;
+    background-color:#964B00;
 }
 
 /*Contact Styling*/
@@ -894,9 +891,6 @@ section.mobile-grooming img {
 /*FAQ-about sub-content*/
 section.FAQ {
     background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
-    background-size: 100% 18%;
-    background-position: top;
-    background-repeat: no-repeat;
 }
 
 .FAQ-list{
@@ -974,12 +968,18 @@ section.FAQ {
 }
 
 /*INDEX- reviews style*/
+
 .slide-container{
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    margin:auto;
     padding: 30px 0;
+}
+
+.slide-container h1{
     text-align: center;
+    font-size: 36px;
+    text-decoration: underline #DD793B;
 }
 .review-slide{
     min-width: 100%;
@@ -1044,7 +1044,6 @@ section.FAQ {
     transition: 0.6s ease;
     border-radius: 50%;
     user-select: none;    
-    background-color: rgba(255, 255, 255, 0.8);
     z-index: 2;
 }
 
@@ -1082,11 +1081,11 @@ section.FAQ {
     transition: transform 0.5s ease-in-out;
 }
 
-/*Overall Review Style*/
+/*Overall Reviews Styling*/
 .review-slide{
     font-size: 14px;
     color: #DD793B;
-    margin: 0;
+    margin: 1;
 }
 
 .review-slide01{
@@ -1166,6 +1165,11 @@ section.FAQ {
     width: 88%;
     margin: auto;
 }
+
+.mySlides {
+    display: none;
+}
+
 
 section.rewards-home {
     background-color: #521f01;
