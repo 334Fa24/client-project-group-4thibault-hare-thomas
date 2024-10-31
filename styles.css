@@ -516,6 +516,27 @@ section.hero.book {
 section.hero.services {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/services-header.jpg");
 }
+.services {
+    background-color: #fff7f2;
+    line-height: 1.6;  
+    padding: 20px 30px;
+    margin: 0;
+    
+}
+
+.services p {
+    padding-top: 15px;
+    font-size: 1.5em;
+}
+
+.services h3 {
+    padding-top: 30px;
+    font-size: 1.7em;
+}
+
+.services h4 {
+    font-size: 2.5em;
+}
 
 .round {
   border-radius: 8px;
@@ -536,23 +557,69 @@ section.hero.services {
     margin-left: auto;
     margin-right: auto;
     margin-top: 45px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .long-line2 {
     border: 1px solid black;
     width: 100%;
-    margin-left: auto;
+    margin-left: 100;
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 35px;
 }
+
 .short-line {
     border: 1px solid black;
     width: 23%;
     margin-left: 0;
     margin-right: auto;
+    margin-top: 10px;
 }
+
+.learn-btn {
+    background-color: #DD793B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+/*Style for Hover Img*/
+.service .img {
+    width: fit-content;
+}
+
+.service .img:hover:before {
+    background: #B96531;
+    content: "";
+    width: 150px;
+    height: 110px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+/*Style for Services Table*/
+.table-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows tables to wrap on smaller screens */
+    justify-content: space-between; /* Space out the tables */
+}
+
+.tab-desk-table {
+    margin: 10px; /* Adds some space between the tables */
+    width: 30%; /* Adjusts the width of the tables */
+}
+
 
 /* Rewards page styles */
 section.hero.rewards {
@@ -618,6 +685,103 @@ section.terms-conditions h4 {
     margin: 0 0 4px 0;
 }
 
+/*Book Now Styling*/
+.hero.book{
+    text-align: left;
+    background-color: #DD793B;
+    color: #fff7f2;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Disclaimer section styling */
+.hero-disclaimer {
+    text-align: left;
+    background-color: #fff7f2;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.hero-disclaimer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Form layout for the location options */
+.hero-location, .hero-services, .booking-form {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff7f2;
+}
+
+/* Styling for each question header */
+.hero-location h2, .hero-services h2, .booking-form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3D372F;
+}
+
+/* Location radio buttons layout */
+.location-selection, .services-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style each form group for booking details */
+.booking-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: #3D372F;
+}
+
+.booking-form input[type="text"], .booking-form input[type="tel"], .booking-form input[type="email"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Services checkboxes styling */
+.services-selection label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.services-selection input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Submit button styling */
+.submit-section {
+    width: 100%;
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: #DD793B;
+    color: #fff7f2;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    color: #DD793B;
+    background-color:#964B00;
+}
+
 @media(max-width: 768px) {
     section.rewards .flex.three-column {
         display: block;
@@ -639,18 +803,47 @@ section.terms-conditions h4 {
     }
 }
 
-/*Contact Styling*/
+/*Contact Page Styling*/
 section.hero.contact{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
     
 }
 
+.contact h1{
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.contact h4 {
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+.tel-link {
+    display: none;
+}
+
+.tel-num {
+    display: block;
+    color: #49ACF8; 
+}
+
+.contact-email-link {
+    color: #49ACF8;
+    font-size: 1em;
+}
+
+.map-contact {
+    margin-left: 450px;
+    margin-top: -270px;
+    margin-bottom: 50px;
+}
 /*About content*/
 section.hero.about{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
     object-position: inherit;
     background-size: cover;
 }
+
 
 .paragraph {
     padding: 20px 30px;
@@ -660,7 +853,7 @@ section.hero.about{
     text-align: center;
     background-color: #fff7f2;
     margin: 0;
-    border-bottom: 5px solid #DD793B;
+    border-bottom: 2px solid #DD793B;
 }
 
 .about, .about-motto {
@@ -764,9 +957,6 @@ section.mobile-grooming img {
 /*FAQ-about sub-content*/
 section.FAQ {
     background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
-    background-size: 100% 18%;
-    background-position: top;
-    background-repeat: no-repeat;
 }
 
 .FAQ-list{
@@ -809,7 +999,7 @@ section.FAQ {
 
 /*Index Clean Fur Bold Style*/
 .fur-header{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: white;
     -webkit-text-stroke:1.5px  #DD793B;
@@ -830,26 +1020,32 @@ section.FAQ {
     max-width: 60%;
 }
 
-text-container p{
+.text-container p{
     font-size: 16px;
     color: #DD793B;
     text-align: center;
+    font-weight: bold;
 }
 
 .happy-dog-img{
     max-width: 40%;
     height: auto;
-    margin-left: 10px;
-    
+    margin-left: 10px;   
 }
 
 /*INDEX- reviews style*/
+
 .slide-container{
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    margin:auto;
     padding: 30px 0;
+}
+
+.slide-container h1{
     text-align: center;
+    font-size: 36px;
+    text-decoration: underline #DD793B;
 }
 .review-slide{
     min-width: 100%;
@@ -914,7 +1110,6 @@ text-container p{
     transition: 0.6s ease;
     border-radius: 50%;
     user-select: none;    
-    background-color: rgba(255, 255, 255, 0.8);
     z-index: 2;
 }
 
@@ -952,11 +1147,11 @@ text-container p{
     transition: transform 0.5s ease-in-out;
 }
 
-/*Overall Review Style*/
+/*Overall Reviews Styling*/
 .review-slide{
     font-size: 14px;
     color: #DD793B;
-    margin: 0;
+    margin: 1;
 }
 
 .review-slide01{
@@ -1036,6 +1231,11 @@ text-container p{
     width: 88%;
     margin: auto;
 }
+
+.mySlides {
+    display: none;
+}
+
 
 section.rewards-home {
     background-color: #521f01;
