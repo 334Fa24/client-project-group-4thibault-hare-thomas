@@ -1011,6 +1011,47 @@ section.FAQ {
     margin-left: 10px;   
 }
 
+/* Mobile Faq Style */
+@media (max-width: 768px) {
+    .FAQ-header h1 {
+        font-size: 28px;
+    }
+
+    .FAQ-list h3 {
+        font-size: 1.1em;
+    }
+
+    .FAQ-list p {
+        font-size: 0.95em;
+    }
+
+    /* Align main content flex layout vertically */
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    /* Responsive adjustments for text and image */
+    .text-container {
+        max-width: 90%; /* Full width on mobile */
+        text-align: center;
+    }
+
+    .text-container p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .happy-dog-img {
+        max-width: 70%;
+        margin: 10px auto;
+    }
+    
+    .caq{
+        display: none;
+    }
+}
 /*INDEX- reviews style*/
 
 .slide-container{
