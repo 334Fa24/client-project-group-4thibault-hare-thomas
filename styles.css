@@ -506,6 +506,106 @@ section.rewards h3 {
     margin-bottom: 25px;
 }
 
+/*Book Now Styling*/
+.hero.book{
+    text-align: left;
+    background-color: #DD793B;
+    color: #fff7f2;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Disclaimer section styling */
+.hero-disclaimer {
+    text-align: left;
+    background-color: #fff7f2;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #DD793B;
+}
+
+.hero-disclaimer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Form layout for the location options */
+.hero-location, .hero-services, .booking-form {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff7f2;
+}
+
+/* Styling for each question header */
+.hero-location h2, .hero-services h2, .booking-form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3D372F;
+}
+
+/* Location radio buttons layout */
+.location-selection, .services-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style each form group for booking details */
+.booking-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: #3D372F;
+}
+
+.booking-form input[type="text"], 
+.booking-form input[type="tel"], 
+.booking-form input[type="email"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Services checkboxes styling */
+.services-selection label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.services-selection input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Submit button styling */
+.submit-section {
+    width: 100%;
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: #DD793B;
+    color: #fff7f2;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3D372F;
+}
+
 /*Contact Styling*/
 section.hero.contact{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
@@ -519,7 +619,6 @@ section.hero.about{
     background-size: cover;
 }
 
-<<<<<<< HEAD
 .Paragraph {
     padding: 20px 30px;
     font-size: 2em; 
@@ -530,8 +629,6 @@ section.hero.about{
     margin: 0;
     border-bottom: 5px solid #DD793B;
 }
-=======
->>>>>>> 63362dca1742eef541071375c23325a0481ce33e
 
 .about, .about-motto {
     background-color: #fff7f2;
@@ -658,7 +755,7 @@ section.FAQ {
 
 /*Index Clean Fur Bold Style*/
 .fur-header{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: white;
     -webkit-text-stroke:1.5px  #DD793B;
@@ -679,17 +776,17 @@ section.FAQ {
     max-width: 60%;
 }
 
-text-container p{
+.text-container p{
     font-size: 16px;
     color: #DD793B;
     text-align: center;
+    font-weight: bold;
 }
 
 .happy-dog-img{
     max-width: 40%;
     height: auto;
-    margin-left: 10px;
-    
+    margin-left: 10px;   
 }
 
 /*INDEX- reviews style*/
