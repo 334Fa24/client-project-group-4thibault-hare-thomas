@@ -503,6 +503,35 @@ section.hero.services {
     border-radius: 8px;
     
 }
+/*Style for Hover Img*/
+.service .img {
+    width: fit-content;
+}
+
+.service .img:hover:before {
+    background: #B96531;
+    content: "";
+    width: 150px;
+    height: 110px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+/*Style for Services Table*/
+.table-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows tables to wrap on smaller screens */
+    justify-content: space-between; /* Space out the tables */
+}
+
+.tab-desk-table {
+    margin: 10px; /* Adds some space between the tables */
+    width: 30%; /* Adjusts the width of the tables */
+}
+
 
 /* Rewards page styles */
 section.hero.rewards {
