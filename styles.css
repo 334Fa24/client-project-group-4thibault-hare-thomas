@@ -14,6 +14,10 @@ body {
     background-color: #fff7f2;
 }
 
+h2, h3, h4 {
+    margin-top: 0;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -696,12 +700,17 @@ section.hero.mobile-grooming {
     object-position: inherit;
 }
 
+section.mobile-grooming > p {
+    margin-bottom: 36px;
+}
+
 section.mobile-grooming img {
     width: 100%;
 }
 
 .flex.two-column {
-    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 36px;
 }
 
 .flex.two-column > * {
@@ -712,8 +721,14 @@ section.mobile-grooming img {
     .flex.two-column {
         flex-direction: column;
     }
+    section.mobile-grooming .flex.two-column:first-of-type {
+        flex-direction: column-reverse;
+    }
     .flex.two-column > * {
         width: 100%;
+    }
+    .flex.two-column img {
+        margin-bottom: 15px;
     }
 }
 
