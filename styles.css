@@ -20,7 +20,7 @@ a {
 }
 
 ul {
-    margin: 0;
+    margin: 0 0 0 30px;
     padding: 0;   
 }
 
@@ -103,6 +103,10 @@ footer .payment-methods li {
 
 footer .payment-methods li:last-child {
     margin-right: 0;
+}
+
+footer ul.socials {
+    margin: 0;
 }
 
 footer .socials img {
@@ -242,6 +246,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
+    margin: 0;
 }
 
 nav li a {
@@ -481,10 +486,6 @@ section.rewards h3 {
     margin-bottom: 25px;
 }
 
-section.rewards ul, section.perks ul, section.terms-conditions ul {
-    margin-left: 30px;
-}
-
 section.rewards .flex.three-column {
     padding: 0 30px;
 }
@@ -665,10 +666,6 @@ section.hero.about{
 
 /*Mobile-Tablet for About*/
 @media(max-width: 768px){
-    nav{
-        top: 173px;
-    } 
-    
     .about{
         text-overflow: ellipsis;
     }   
@@ -731,6 +728,7 @@ section.FAQ {
 .FAQ-list{
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .FAQ-list li{
