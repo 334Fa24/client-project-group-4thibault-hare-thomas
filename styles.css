@@ -471,7 +471,7 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-section.rewards h2, section#join h2 {
+section.rewards h2, section#join h2, section.perks h2 {
     margin-top: 0;
     font-size: 38px;
     text-align: center;
@@ -481,23 +481,19 @@ section.rewards h3 {
     margin-bottom: 25px;
 }
 
-.terms-conditions {
-    font-size: 14px;
-}
-
-.terms-conditions h4 {
-    margin: 0 0 4px 0;
-}
-
-section.rewards ul {
+section.rewards ul, section.perks ul, section.terms-conditions ul {
     margin-left: 30px;
 }
 
-section.rewards .flex.three-column, section.rewards .perks {
+section.rewards .flex.three-column, section.perks {
     margin-bottom: 38px;
     padding: 30px;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+section.rewards .flex.three-column > div:last-child {
+    margin-bottom: 0;
 }
 
 .flex.three-column > * {
@@ -524,9 +520,21 @@ section.rewards p.icon {
     margin-bottom: 25px;
 }
 
-section.rewards .perks, section#join {
+section.perks, section#join {
     background-color: #ede8e2;
     padding: 30px;
+}
+
+section.perks {
+    margin: 0 30px;
+}
+
+section.terms-conditions {
+    font-size: 14px;
+}
+
+section.terms-conditions h4 {
+    margin: 0 0 4px 0;
 }
 
 section#join form {
@@ -577,17 +585,27 @@ section#join .red {
     section.rewards .flex.three-column {
         display: block;
         padding: 0;
+        margin-bottom: 15px;
     }
     section.rewards .flex.three-column > div {
         width: 100%;
         align-items: flex-start;
         margin-bottom: 40px;
     }
-    section.rewards h2, section#join h2 {
+    section.rewards h2, section#join h2, section.perks h2 {
         text-align: left;
     }
     section.rewards h3 {
         margin-bottom: 10px;
+    }
+    section.perks {
+        margin: 0;
+    }
+    section#join form {
+        flex-direction: column;
+    }
+    section#join form > p {
+        width: 100%;
     }
 }
 
