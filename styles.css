@@ -61,7 +61,7 @@ form > * {
     box-sizing: border-box;
 }
 
-form > #submit {
+form input#submit {
     width: inherit;
     margin: inherit;
 }
@@ -724,7 +724,7 @@ section.terms-conditions h4 {
 }
 
 /* Location radio buttons layout */
-.location-selection, .services-selection {
+.location-selection {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -758,28 +758,6 @@ section.terms-conditions h4 {
 
 .services-selection input[type="checkbox"] {
     transform: scale(1.2);
-}
-
-/* Submit button styling */
-.submit-section {
-    width: 100%;
-    text-align: center;
-}
-
-.submit-btn {
-    background-color: #DD793B;
-    color: #fff7f2;
-    padding: 12px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    color: #DD793B;
-    background-color:#964B00;
 }
 
 @media(max-width: 768px) {
