@@ -1,14 +1,21 @@
 /* Names: Aaron Hare, Alyna Thibault, Mariah Thomas */
 
 /* Global CSS */
+* {
+    font-family: 'Inter';
+}
+
 body, p, h3 {
     margin: 0;
     padding: 0;
-    font-family: 'Inter';
 }
 
 body {
     background-color: #fff7f2;
+}
+
+h2, h3, h4 {
+    margin-top: 0;
 }
 
 a {
@@ -17,7 +24,7 @@ a {
 }
 
 ul {
-    margin: 0;
+    margin: 0 0 0 30px;
     padding: 0;   
 }
 
@@ -91,6 +98,10 @@ footer .payment-methods li {
 
 footer .payment-methods li:last-child {
     margin-right: 0;
+}
+
+footer ul.socials {
+    margin: 0;
 }
 
 footer .socials img {
@@ -230,6 +241,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
+    margin: 0;
 }
 
 nav li a {
@@ -497,7 +509,7 @@ section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
 }
 
-section.rewards h2, section#join h2 {
+section.rewards h2, section#join h2, section.perks h2 {
     margin-top: 0;
     font-size: 38px;
     text-align: center;
@@ -507,23 +519,12 @@ section.rewards h3 {
     margin-bottom: 25px;
 }
 
-.terms-conditions {
-    font-size: 14px;
+section.rewards .flex.three-column {
+    padding: 0 30px;
 }
 
-.terms-conditions h4 {
-    margin: 0 0 4px 0;
-}
-
-section.rewards ul {
-    margin-left: 30px;
-}
-
-section.rewards .flex.three-column, section.rewards .perks {
-    margin-bottom: 38px;
-    padding: 30px;
-    padding-top: 0;
-    padding-bottom: 0;
+section.rewards .flex.three-column > div:last-child {
+    margin-bottom: 0;
 }
 
 .flex.three-column > * {
@@ -550,9 +551,65 @@ section.rewards p.icon {
     margin-bottom: 25px;
 }
 
-section.rewards .perks {
+section.perks, section#join {
     background-color: #ede8e2;
     padding: 30px;
+}
+
+section.perks {
+    margin: 0 30px;
+}
+
+section.terms-conditions {
+    font-size: 14px;
+}
+
+section.terms-conditions h4 {
+    margin: 0 0 4px 0;
+}
+
+section#join form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#join form > p {
+    width: 48.5%;
+    margin-bottom: 25px;
+}
+
+section#join form label, section#join form > p > input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+section#join form label, section#join > p {
+    margin-bottom: 6px;
+}
+
+section#join > p:last-of-type {
+    margin-bottom: 25px;
+}
+
+section#join form input {
+    padding: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+section#join form input#submit {
+    background-color: #DD793B;
+    color: #fff7f2;
+    padding: 16px 32px;
+    font-weight: 600;
+}
+
+section#join .red {
+    color: #d00000;
 }
 
 @media(max-width: 768px) {
@@ -565,11 +622,20 @@ section.rewards .perks {
         align-items: flex-start;
         margin-bottom: 40px;
     }
-    section.rewards h2, section#join h2 {
+    section.rewards h2, section#join h2, section.perks h2 {
         text-align: left;
     }
     section.rewards h3 {
         margin-bottom: 10px;
+    }
+    section.perks {
+        margin: 0;
+    }
+    section#join form {
+        flex-direction: column;
+    }
+    section#join form > p {
+        width: 100%;
     }
 }
 
@@ -661,10 +727,6 @@ section.hero.about{
 
 /*Mobile-Tablet for About*/
 @media(max-width: 768px){
-    nav{
-        top: 173px;
-    } 
-    
     .about{
         text-overflow: ellipsis;
     }   
@@ -695,12 +757,36 @@ section.hero.mobile-grooming {
     object-position: inherit;
 }
 
+section.mobile-grooming > p {
+    margin-bottom: 36px;
+}
+
 section.mobile-grooming img {
     width: 100%;
 }
 
+.flex.two-column {
+    align-items: center;
+    margin-bottom: 36px;
+}
+
 .flex.two-column > * {
-    width: 50%;
+    width: 48.5%;
+}
+
+@media(max-width: 768px) {
+    .flex.two-column {
+        flex-direction: column;
+    }
+    section.mobile-grooming .flex.two-column:first-of-type {
+        flex-direction: column-reverse;
+    }
+    .flex.two-column > * {
+        width: 100%;
+    }
+    .flex.two-column img {
+        margin-bottom: 15px;
+    }
 }
 
 /*FAQ-about sub-content*/
@@ -714,6 +800,7 @@ section.FAQ {
 .FAQ-list{
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .FAQ-list li{
@@ -799,7 +886,7 @@ text-container p{
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide01{
@@ -808,7 +895,7 @@ text-container p{
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide02{
@@ -817,7 +904,7 @@ text-container p{
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide03{
@@ -826,7 +913,7 @@ text-container p{
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide04{
@@ -835,7 +922,7 @@ text-container p{
     padding: 20px;
     font-size: 18px;
     color: #DD793B;
-    background-color: #fff6f2;
+    background-color: #fff7f2;
 }
 
 .review-slide:first-child{
@@ -976,10 +1063,6 @@ text-container p{
 .review-slide04{
     width: 88%;
     margin: auto;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 section.rewards-home {
