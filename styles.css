@@ -608,6 +608,25 @@ section.hero.services {
     border-radius: 8px;
 }
 
+.service {
+    background-color: #DD793B;
+}
+
+.service h4 {
+    text-align: center;
+    font-size: 3em;
+    color: #fff7f2;
+}
+
+.short-line2 {
+    border: 1px solid #fff7f2;
+    width: 30%;
+    margin-left: center;
+    margin-right: auto;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
 /*Style for Services Table*/
 .table-container {
     display: flex;
@@ -620,6 +639,31 @@ section.hero.services {
     width: 30%; /* Adjusts the width of the tables */
 }
 
+td {
+    text-align: center;
+    color: #fff7f2;
+}
+
+/*Location Home Page Style*/
+.location {
+    background-color: #DD793B;
+}
+
+.location h1 {
+    color: #fff7f2;
+    font-size: 3em;
+    text-align: right;
+}
+
+.location h3 {
+    color: #fff7f2;
+    text-align: right;
+}
+
+.location p {
+    color: #fff7f2;
+    text-align: right;
+}
 
 /* Rewards page styles */
 section.hero.rewards {
