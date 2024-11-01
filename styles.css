@@ -753,7 +753,7 @@ section.terms-conditions h4 {
 }
 
 /* Form layout for the location options */
-.hero-location, .hero-services, .booking-form {
+.hero-location, .booking-form {
     width: 100%;
     margin-bottom: 20px;
     padding: 10px;
@@ -761,7 +761,7 @@ section.terms-conditions h4 {
 }
 
 /* Styling for each question header */
-.hero-location h2, .hero-services h2, .booking-form h2 {
+.hero-location h2, .booking-form h2 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #3D372F;
@@ -919,7 +919,7 @@ section.hero.about{
     }
 
     /* Form Sections */
-    .hero-disclaimer, .hero-location, .booking-form, .hero-services, .submit-section {
+    .hero-disclaimer, .hero-location, .booking-form, .submit-section {
         padding: 15px;
     }
 
