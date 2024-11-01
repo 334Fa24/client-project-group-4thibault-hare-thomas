@@ -586,11 +586,9 @@ section.hero.services {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
     border-radius: 8px;
-    
 }
+
 /*Style for Hover Img*/
 .service .img {
     width: fit-content;
@@ -647,22 +645,32 @@ td {
 /*Location Home Page Style*/
 .location {
     background-color: #DD793B;
+    display: flex;
+    align-items: flex-start;
 }
+
 
 .location h1 {
     color: #fff7f2;
     font-size: 3em;
-    text-align: right;
+    margin: 0 0 10px;
 }
 
 .location h3 {
     color: #fff7f2;
-    text-align: right;
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    text-align: center;
 }
 
 .location p {
     color: #fff7f2;
-    text-align: right;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+iframe {
+    margin-right: 30px;
 }
 
 /* Rewards page styles */
@@ -830,34 +838,37 @@ section.hero.contact{
     
 }
 
-.contact h1{
-    margin-left: 20px;
-    font-size: 1.5em;
+.contact h2{
+    text-align: center;
+    font-size: 2em;
 }
 
 .contact h4 {
-    margin-left: 20px;
+    text-align: center;
     font-size: 1.5em;
+    color: #DD793B;
 }
+
 .tel-link {
     display: none;
 }
 
 .tel-num {
     display: block;
-    color: #49ACF8; 
 }
 
 .contact-email-link {
-    color: #49ACF8;
+    color: #DD793B;
     font-size: 1em;
 }
 
-.map-contact {
-    margin-left: 450px;
-    margin-top: -270px;
-    margin-bottom: 50px;
+.map {
+    border: 2px solid #3D372F;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
 }
+
 /*About content*/
 section.hero.about{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/happy-dogs.jpg");
@@ -911,7 +922,7 @@ section.hero.about{
     word-spacing: 35px;
 }
 
-/* Mobile Styles for Book Now Page */
+/* Mobile Styles Rules for Pages*/
 @media (max-width: 768px) {
     /* Hero Header and Disclaimer */
     .hero-book h1 {
@@ -944,10 +955,18 @@ section.hero.about{
         padding: 12px;
         width: 100%;
     }
-}
-
-/*Mobile-Tablet for About*/
-@media(max-width: 768px){
+    /*Map Style*/
+    
+    iframe {
+        display: none;
+            
+    }
+    
+    /*Location Home Page Section Style*/
+    .info-container {
+        align-content: center;
+    }
+    /*About Page Mobile Style*/
     .about{
         text-overflow: ellipsis;
     }   
@@ -969,6 +988,10 @@ section.hero.about{
         text-align: center;
         font-size: 30px;
         
+    }
+    
+    .happy-dog-img {
+        display: none;
     }
 }
 
@@ -1074,11 +1097,6 @@ section.FAQ {
     .text-container p {
         font-size: 14px;
         padding: 10px 0;
-    }
-
-    .happy-dog-img {
-        max-width: 70%;
-        margin: 10px auto;
     }
     
     .caq{
