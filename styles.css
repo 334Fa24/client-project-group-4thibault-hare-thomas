@@ -189,64 +189,6 @@ footer .basic-information div:first-child {
     margin-bottom: 12px;
 }
 
-/* Footer Hover Animations for Desktop */
-@media (min-width: 768px) {
-    footer a:hover {
-        color: #DD793B;
-    }
-
-    footer .socials a:hover img {
-        filter: invert(51%) sepia(95%) saturate(370%) hue-rotate(338deg) brightness(89%) contrast(94%);
-    }
-    
-    footer .back-to-top:hover {
-        background-color: #DD793B;
-        color: #fff7f2;
-        box-shadow: inset 1px 1px 1px 1px #DD793B;
-    }
-}
-
-/* Column Width Adjustment */
-@media(max-width: 1125px) {
-    footer .flex.five-column > * {
-        width: 17%;
-    }
-}
-
-@media(max-width: 1075px) {
-    footer .flex.five-column > * {
-        width: 18%;
-    }
-}
-
-/* Footer Copyright Info/Payment Info Break */
-@media(max-width: 600px) {
-    footer > div:last-child {
-        display: block;
-        text-align: center;
-    }
-
-    footer > div:last-child p {
-        margin-bottom: 8px;
-    }
-}
-
-/* Mobile Footer Styling */
-@media(max-width: 450px) {
-    footer .flex.five-column > *, footer .flex.five-column .basic-information {
-        width: 100%;
-        display: block;
-    }
-
-    footer .basic-information div:last-child {
-        text-align: left;
-    }
-
-    footer .flex.five-column > *:nth-child(4) {
-        margin-bottom: 20px;
-    }
-}
-
 /*STYLES FOR BANNER desktop*/
 .banner {
     background-color: #3D372F;
@@ -364,13 +306,6 @@ nav, .dropdown{
 
 .dropdown-About li:last-child {
     border-bottom: none;
-}
-
-/* Fixes menu position when banner breaks into 2 lines */
-@media(max-width: 370px) {
-    nav {
-        top: 173px;
-    }
 }
 
 /* Hero Section Styling */
@@ -849,42 +784,6 @@ section.FAQ {
     max-width: 1200px;
 }
 
-/*FAQ Mobile content-Tablet*/
-@media (max-width: 768px) {
-    .FAQ-header h1 {
-        font-size: 28px;
-    }
-
-    .FAQ-list h3 {
-        font-size: 1.1em;
-    }
-
-    .FAQ-list p {
-        font-size: 0.95em;
-    }
-
-    /* Align main content flex layout vertically */
-    .main {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    /* Responsive adjustments for text and image */
-    .text-container {
-        max-width: 90%; /* Full width on mobile */
-        text-align: center;
-    }
-
-    .text-container p {
-        font-size: 14px;
-        padding: 10px 0;
-    }
-    
-    .caq{
-        display: none;
-    }
-}
 /*INDEX Main styles*/
 .slideshow-container{
     position: relative;
@@ -1179,11 +1078,25 @@ a.btn:first-of-type {
     margin-bottom: 25px;
 }
 
-@media(max-width: 1080px) {
+@media(max-width: 1125px) {
+    /* Column Width Adjustment */
+    footer .flex.five-column > * {
+        width: 17%;
+    }
+}
+
+@media(max-width: 1075px) {
+    /* Column Width Adjustment */
+    footer .flex.five-column > * {
+        width: 18%;
+    }
+
+    /* Rewards background switch */
     section.rewards-home {
         background-image: url('images/pug-gradient-map-tablet.jpg');
     }
 }
+
 @media(max-width: 939px) {
     section.rewards-home {
         background-image: none;
@@ -1390,14 +1303,16 @@ a.btn:first-of-type {
         text-align: right;
         margin-top: 12px;
     }
-    
+
     /* Form Styles */
     form {
         flex-direction: column;
     }
+
     form > * {
         width: 100%;
     }
+
     .form-container h2 {
         text-align: left;
     }
@@ -1406,13 +1321,102 @@ a.btn:first-of-type {
     .flex.two-column {
         flex-direction: column;
     }
+
     section.mobile-grooming .flex.two-column:first-of-type {
         flex-direction: column-reverse;
     }
+
     .flex.two-column > * {
         width: 100%;
     }
+
     .flex.two-column img {
         margin-bottom: 15px;
+    }
+
+    /* FAQ Styles*/
+    .FAQ-header h1 {
+        font-size: 28px;
+    }
+
+    .FAQ-list h3 {
+        font-size: 1.1em;
+    }
+
+    .FAQ-list p {
+        font-size: 0.95em;
+    }
+
+    /* Align main content flex layout vertically */
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    /* Responsive adjustments for text and image */
+    .text-container {
+        max-width: 90%; /* Full width on mobile */
+        text-align: center;
+    }
+
+    .text-container p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    
+    .caq{
+        display: none;
+    }
+}
+/* Footer Hover Animations for Desktop */
+@media (min-width: 768px) {
+    footer a:hover {
+        color: #DD793B;
+    }
+
+    footer .socials a:hover img {
+        filter: invert(51%) sepia(95%) saturate(370%) hue-rotate(338deg) brightness(89%) contrast(94%);
+    }
+    
+    footer .back-to-top:hover {
+        background-color: #DD793B;
+        color: #fff7f2;
+        box-shadow: inset 1px 1px 1px 1px #DD793B;
+    }
+}
+
+@media(max-width: 600px) {
+    /* Footer Copyright Info/Payment Info Break */
+    footer > div:last-child {
+        display: block;
+        text-align: center;
+    }
+
+    footer > div:last-child p {
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width: 450px) {
+    /* Mobile Footer Styling */
+    footer .flex.five-column > *, footer .flex.five-column .basic-information {
+        width: 100%;
+        display: block;
+    }
+
+    footer .basic-information div:last-child {
+        text-align: left;
+    }
+
+    footer .flex.five-column > *:nth-child(4) {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 370px) {
+    /* Fixes menu position when banner breaks into 2 lines */
+    nav {
+        top: 173px;
     }
 }
