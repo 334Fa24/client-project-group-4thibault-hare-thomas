@@ -110,18 +110,6 @@ form textarea {
     margin-bottom: 25px;
 }
 
-@media(max-width: 768px) {
-    form {
-        flex-direction: column;
-    }
-    form > * {
-        width: 100%;
-    }
-    .form-container h2 {
-        text-align: left;
-    }
-}
-
 /* Desktop Footer Styling */
 footer {
     background-color: #3D372F;
@@ -228,39 +216,6 @@ footer .basic-information div:first-child {
 @media(max-width: 1075px) {
     footer .flex.five-column > * {
         width: 18%;
-    }
-}
-
-/* Tablet Footer Styling */
-@media(max-width: 768px) {
-    footer .flex.five-column {
-        flex-wrap: wrap;
-    }
-
-    footer .flex.five-column > * {
-        width: 45%;
-        margin-bottom: 20px;
-    }
-
-    footer .flex.five-column > .back-to-top {
-        display: inline-flex;
-        height: 60px;
-    }
-
-    footer .flex.five-column .basic-information {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    footer .basic-information div:first-child, footer .flex.five-column > *:last-child, footer .flex.five-column > *:nth-child(4) {
-        margin-bottom: 0;
-    }
-
-    footer .basic-information div:last-child {
-        text-align: right;
-        margin-top: 12px;
     }
 }
 
@@ -411,64 +366,6 @@ nav, .dropdown{
     border-bottom: none;
 }
 
-/*STYLES FOR NAV mobile*/
-@media(max-width:768px) {
-    nav {
-        display: none;
-        position: absolute;
-        top: 156px;
-        left: 0;
-        background-color: #3D372F;
-        color: #fff7f2;
-        width: 100%;
-    }
-
-    nav ul {
-        display: block;
-    }
-
-    nav ul li {
-        text-align: center;
-    }
-
-    nav ul li a:hover {
-        background-color: #DD793B;
-        color: #fff7f2;
-    }
-
-    .dropdown ul {
-        display: block;
-        position: unset;
-        background-color: inherit;
-    }
-
-    .dropdown ul li a {
-        padding: 20px 35px;
-    }
-
-    .dropdown-About li {
-        padding: 0;
-        border: 0;
-    }
-
-    a.menu-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 60px;
-        padding: 0 30px;
-        position: absolute;
-        right: 0;
-        height: 119px;
-        cursor: pointer;
-    }
-    /*STYLES FOR BANNER mobile*/
-    .banner {
-        padding: 10px;
-        font-size: 14px;
-    }
-}
-
 /* Fixes menu position when banner breaks into 2 lines */
 @media(max-width: 370px) {
     nav {
@@ -493,12 +390,6 @@ section.hero {
     color: #fff;
     font-size: 56px;
     text-shadow: 1px 1px 5px rgba(61, 55, 47, 0.5);
-}
-
-@media(max-width: 768px) {
-    section.hero {
-        font-size: 36px!important;
-    }
 }
 
 section.hero h1 {
@@ -811,27 +702,6 @@ section.terms-conditions h4 {
     transform: scale(1.2);
 }
 
-@media(max-width: 768px) {
-    section.rewards .flex.three-column {
-        display: block;
-        padding: 0;
-    }
-    section.rewards .flex.three-column > div {
-        width: 100%;
-        align-items: flex-start;
-        margin-bottom: 40px;
-    }
-    section.rewards h2, section.perks h2 {
-        text-align: left;
-    }
-    section.rewards h3 {
-        margin-bottom: 10px;
-    }
-    section.perks {
-        margin: 0;
-    }
-}
-
 /*Contact Page Styling*/
 section.hero.contact{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
@@ -922,79 +792,6 @@ section.hero.about{
     word-spacing: 35px;
 }
 
-/* Mobile Style Rules for Pages*/
-@media (max-width: 768px) {
-    /* Hero Header and Disclaimer */
-    .hero-book h1 {
-        font-size: 36px;
-    }
-
-    /* Form Sections */
-    .hero-disclaimer, .hero-location, .booking-form, .submit-section {
-        padding: 15px;
-    }
-
-    /* Stack Radio and Checkbox Options Vertically */
-    .location-selection, .services-selection {
-        flex-direction: column;
-    }
-
-    /* Adjust Form Field Margins and Padding */
-    .form-group input[type="text"], 
-    .form-group input[type="email"], 
-    .form-group input[type="tel"],
-    .form-group input[type="radio"],
-    .form-group input[type="checkbox"] {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    /* Adjust Button for Mobile */
-    .submit-section .submit-btn {
-        font-size: 18px;
-        padding: 12px;
-        width: 100%;
-    }
-    /*Map Style*/
-    
-    iframe {
-        display: none;
-            
-    }
-    
-    /*Location Home Page Section Style*/
-    .info-container {
-        align-content: center;
-    }
-    /*About Page Mobile Style*/
-    .about{
-        text-overflow: ellipsis;
-    }   
-    
-    .about p{
-        text-align: center;
-    }
-    
-    .about h2{
-        text-align: center;
-    }
-    
-    .about-motto h2{
-        text-align: center;
-        font-size: 30px;
-    }
-    
-    .about-motto h1{
-        text-align: center;
-        font-size: 30px;
-        
-    }
-    
-    .happy-dog-img {
-        display: none;
-    }
-}
-
 /* Mobile Grooming Content */
 section.hero.mobile-grooming {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/mobile-grooming.jpg");
@@ -1016,21 +813,6 @@ section.mobile-grooming img {
 
 .flex.two-column > * {
     width: 48.5%;
-}
-
-@media(max-width: 768px) {
-    .flex.two-column {
-        flex-direction: column;
-    }
-    section.mobile-grooming .flex.two-column:first-of-type {
-        flex-direction: column-reverse;
-    }
-    .flex.two-column > * {
-        width: 100%;
-    }
-    .flex.two-column img {
-        margin-bottom: 15px;
-    }
 }
 
 /*FAQ-about sub-content*/
@@ -1419,5 +1201,218 @@ a.btn:first-of-type {
 
     section.rewards-home p {
         max-width: none;
+    }
+}
+
+/* Mobile Styles Rules for Pages*/
+@media (max-width: 768px) {
+    /* Mobile Nav Styles */
+    nav {
+        display: none;
+        position: absolute;
+        top: 156px;
+        left: 0;
+        background-color: #3D372F;
+        color: #fff7f2;
+        width: 100%;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        background-color: #DD793B;
+        color: #fff7f2;
+    }
+
+    .dropdown ul {
+        display: block;
+        position: unset;
+        background-color: inherit;
+    }
+
+    .dropdown ul li a {
+        padding: 20px 35px;
+    }
+
+    .dropdown-About li {
+        padding: 0;
+        border: 0;
+    }
+
+    a.menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 60px;
+        padding: 0 30px;
+        position: absolute;
+        right: 0;
+        height: 119px;
+        cursor: pointer;
+    }
+    /*STYLES FOR BANNER mobile*/
+    .banner {
+        padding: 10px;
+        font-size: 14px;
+    }
+    /* Hero Header and Disclaimer */
+    .hero-book h1 {
+        font-size: 36px;
+    }
+
+    /* Form Sections */
+    .hero-disclaimer, .hero-location, .booking-form, .submit-section {
+        padding: 15px;
+    }
+
+    /* Stack Radio and Checkbox Options Vertically */
+    .location-selection, .services-selection {
+        flex-direction: column;
+    }
+
+    /* Adjust Form Field Margins and Padding */
+    .form-group input[type="text"], 
+    .form-group input[type="email"], 
+    .form-group input[type="tel"],
+    .form-group input[type="radio"],
+    .form-group input[type="checkbox"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Adjust Button for Mobile */
+    .submit-section .submit-btn {
+        font-size: 18px;
+        padding: 12px;
+        width: 100%;
+    }
+    /*Map Style*/
+    
+    iframe {
+        display: none;
+            
+    }
+    
+    /*Location Home Page Section Style*/
+    .info-container {
+        align-content: center;
+    }
+    /*About Page Mobile Style*/
+    .about{
+        text-overflow: ellipsis;
+    }   
+    
+    .about p{
+        text-align: center;
+    }
+    
+    .about h2{
+        text-align: center;
+    }
+    
+    .about-motto h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .about-motto h1{
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    
+    .happy-dog-img {
+        display: none;
+    }
+
+    /* Rewards Page Mobile Styles */
+    section.rewards .flex.three-column {
+        display: block;
+        padding: 0;
+    }
+
+    section.rewards .flex.three-column > div {
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    section.rewards h2, section.perks h2 {
+        text-align: left;
+    }
+
+    section.rewards h3 {
+        margin-bottom: 10px;
+    }
+
+    section.perks {
+        margin: 0;
+    }
+
+    /* Hero Section Styles */
+    section.hero {
+        font-size: 36px!important;
+    }
+
+    /* Footer Styles */
+    footer .flex.five-column {
+        flex-wrap: wrap;
+    }
+
+    footer .flex.five-column > * {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    footer .flex.five-column > .back-to-top {
+        display: inline-flex;
+        height: 60px;
+    }
+
+    footer .flex.five-column .basic-information {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .basic-information div:first-child, footer .flex.five-column > *:last-child, footer .flex.five-column > *:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    footer .basic-information div:last-child {
+        text-align: right;
+        margin-top: 12px;
+    }
+    
+    /* Form Styles */
+    form {
+        flex-direction: column;
+    }
+    form > * {
+        width: 100%;
+    }
+    .form-container h2 {
+        text-align: left;
+    }
+
+    /* Tow Column Flex Styles*/
+    .flex.two-column {
+        flex-direction: column;
+    }
+    section.mobile-grooming .flex.two-column:first-of-type {
+        flex-direction: column-reverse;
+    }
+    .flex.two-column > * {
+        width: 100%;
+    }
+    .flex.two-column img {
+        margin-bottom: 15px;
     }
 }
