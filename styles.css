@@ -772,9 +772,6 @@ section.FAQ {
 .FAQ-header{
     color: #fff7f2;
     padding: 20px 0;
-    position: relative;
-    z-index: 1;
-    text-align: left;
 }
 
 .FAQ-header h1{ 
@@ -1205,7 +1202,7 @@ a.btn:first-of-type {
         padding: 12px;
         width: 100%;
     }
-    
+
     /*Map Style*/
     iframe {
         display: none;
