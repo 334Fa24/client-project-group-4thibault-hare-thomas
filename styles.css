@@ -579,6 +579,7 @@ section.terms-conditions h4 {
     background-color: #fff7f2;
     padding: 15px;
     margin-bottom: 20px;
+    
 }
 
 .hero-disclaimer h2 {
@@ -592,6 +593,7 @@ section.terms-conditions h4 {
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff7f2;
+    word-spacing: 10px;
 }
 
 /* Styling for each question header */
@@ -605,14 +607,14 @@ section.terms-conditions h4 {
 .location-selection {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 /* Style each form group for booking details */
 .booking-form .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    
 }
 
 .booking-form label {
