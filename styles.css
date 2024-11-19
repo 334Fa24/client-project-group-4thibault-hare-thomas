@@ -84,7 +84,7 @@ form input {
 }
 
 form input#submit {
-    background-color: #DD793B;
+    background-color:#B2571F;
     color: #fff7f2;
     padding: 16px 32px;
     font-weight: 600;
@@ -248,7 +248,7 @@ display: none;
 
 /*Book now design for desktop*/
 .book-now {
-    background-color: #DD793B;
+    background-color: #B2571F;
     color: #fff7f2;
 }
 
@@ -269,7 +269,7 @@ nav, .dropdown{
 .dropdown ul {
     display: none;
     position: absolute;
-    background-color: #DD793B;
+    background-color:#B2571F;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -294,7 +294,7 @@ nav, .dropdown{
 /* Hover effect for both the dropdown items and the parent */
 .dropdown > a:hover,
 .dropdown ul li a:hover {
-    background-color: #DD793B;
+    background-color: #B2571F;
     color: #fff7f2;
 }
 
@@ -340,7 +340,7 @@ section.hero.book {
 }
 /*Services page style*/
 section.hero.services {
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/services-header.jpg");
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/maryville-missouri-dog-grooming.jpg");
 }
 .services {
     background-color: #fff7f2;
@@ -405,7 +405,7 @@ section.hero.services {
 }
 
 .learn-btn {
-    background-color: #DD793B;
+    background-color: #B2571F;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -435,7 +435,7 @@ section.hero.services {
 }
 
 .service {
-    background-color: #DD793B;
+    background-color: #B2571F;
 }
 
 .service h2 {
@@ -481,7 +481,7 @@ td {
         margin-left: 60px;
     }
 .location {
-    background-color: #DD793B;
+    background-color: #B2571F;
     display: flex;
     align-items: flex-start;
 }
@@ -550,7 +550,7 @@ section.rewards .flex.three-column > div {
 section.rewards p.icon {
     width: 100px;
     height: 100px;
-    background-color: #DD793B;
+    background-color: #B2571F;
     color: #fff7f2;
     font-size: 40px;
     border-radius: 100%;
@@ -581,7 +581,7 @@ section.terms-conditions h4 {
 /*Book Now Styling*/
 .hero.book{
     text-align: left;
-    background-color: #DD793B;
+    background-color: #B2571F;
     color: #fff7f2;
     padding: 20px;
     width: 100%;
@@ -594,7 +594,7 @@ section.terms-conditions h4 {
     background-color: #fff7f2;
     padding: 15px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #DD793B;
+    border-bottom: 2px solid #B2571F;
     
 }
 
@@ -671,8 +671,8 @@ section.hero.contact{
 .contact h3 {
     text-align: center;
     font-size: 1.5em;
-    color: #DD793B;
     padding-bottom: 25px;
+    color: #B2571F;
 }
 
 .tel-link {
@@ -684,7 +684,7 @@ section.hero.contact{
 }
 
 .contact-email-link {
-    color: #DD793B;
+    color: #B2571F;
     font-size: 1em;
 }
 
@@ -704,7 +704,7 @@ section.hero.contact{
     text-align: center;
     background-color: #fff7f2;
     margin: 0;
-    border-bottom: 2px solid #DD793B;
+    border-bottom: 2px solid #B2571F;
 }
 
 .about, .about-motto {
@@ -734,7 +734,7 @@ section.hero.contact{
 
 .about-motto h1 {
     font-size: 2em;
-    color:#DD793B;
+    color:#B2571F;
     text-align: center;
     margin: 0 auto;
     line-height: 1.2;
@@ -743,7 +743,7 @@ section.hero.contact{
 
 /* Mobile Grooming Content */
 section.hero.mobile-grooming {
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/mobile-grooming.jpg");
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/mobile-grooming-header.jpg");
     object-position: inherit;
 }
 
@@ -780,7 +780,7 @@ section.FAQ {
 }
 
 .FAQ-list h3{
-    color: #DD793B;
+    color: #B2571F;
 }
 
 .FAQ-header{
@@ -800,7 +800,7 @@ section.FAQ {
     padding-left: 1.0em;
     text-align: center;
     font-size: 36px;
-    border-bottom: 2px solid #DD793B;
+    border-bottom: 2px solid #B2571F;
 }
 
 /*INDEX Main styles*/
@@ -812,16 +812,13 @@ section.FAQ {
 }
 
 /*Index Clean Fur Bold Style*/
-.fur-header{
+CFBS p{
     font-size: 50px;
     font-weight: bold;
     color: white;
-    -webkit-text-stroke:1.5px  #DD793B;
+    -webkit-text-stroke:1.5px  #B2B71F;
     text-align: center;
     padding: 20px 0;
-}
-
-.CFBS h1{
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -866,7 +863,7 @@ section.FAQ {
 .slide-container h1{
     text-align: center;
     font-size: 36px;
-    text-decoration: underline #DD793B;
+    text-decoration: underline #B2571F;
 }
 .review-slide{
     min-width: 100%;
@@ -874,7 +871,7 @@ section.FAQ {
     text-align: center;
     padding: 20px;
     font-size: 18px;
-    color: #DD793B;
+    color: #B2571F;
     background-color: #fff7f2;
 }
 
@@ -883,7 +880,7 @@ section.FAQ {
     text-align: center;
     padding: 20px;
     font-size: 18px;
-    color: #DD793B;
+    color: #B2571F;
     background-color: #fff7f2;
 }
 
@@ -892,7 +889,7 @@ section.FAQ {
     text-align: center;
     padding: 20px;
     font-size: 18px;
-    color: #DD793B;
+    color: #B2571F;
     background-color: #fff7f2;
 }
 
@@ -901,7 +898,7 @@ section.FAQ {
     text-align: center;
     padding: 20px;
     font-size: 18px;
-    color: #DD793B;
+    color: #B2571F;
     background-color: #fff7f2;
 }
 
@@ -910,7 +907,7 @@ section.FAQ {
     text-align: center;
     padding: 20px;
     font-size: 18px;
-    color: #DD793B;
+    color:#B2571F;
     background-color: #fff7f2;
 }
 
@@ -925,7 +922,7 @@ section.FAQ {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #DD793B;
+    color: #B2571F;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -959,7 +956,7 @@ section.FAQ {
 }
 
 .active, .dot:hover{
-    background-color: #DD793B;    
+    background-color: #B2571F;    
 }
 
 
@@ -971,61 +968,61 @@ section.FAQ {
 /*Overall Reviews Styling*/
 .review-slide{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 1px;
 }
 
 .review-slide01{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;
 }
 
 .review-slide02{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;
 }
 
 .review-slide03{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;
 }
 
 .review-slide04{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;
 }
 
 .review-slide p{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;  
 }
 
 .review-slide01 p{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;  
 }
 
 .review-slide02 p{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;  
 }
 
 .review-slide03 p{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;  
 }
 
 .review-slide04 p{
     font-size: 14px;
-    color: #DD793B;
+    color: #B2571F;
     margin: 0;  
 }
 .review-slide{
@@ -1097,8 +1094,8 @@ a.btn {
 }
 
 a.btn:first-of-type {
-    background-color: #DD793B;
-    border-color: #DD793B;
+    background-color: #B2571F;
+    border-color: #B2571F;
     color: #fff7f2;
     margin-right: 25px;
     margin-bottom: 25px;
@@ -1165,7 +1162,7 @@ a.btn:first-of-type {
     }
 
     nav ul li a:hover {
-        background-color: #DD793B;
+        background-color: #B2571F;
         color: #fff7f2;
     }
 
@@ -1394,7 +1391,7 @@ a.btn:first-of-type {
 /* Footer Hover Animations for Desktop */
 @media (min-width: 768px) {
     footer a:hover {
-        color: #DD793B;
+        color:#B2571F;
     }
 
     footer .socials a:hover img {
@@ -1402,9 +1399,9 @@ a.btn:first-of-type {
     }
     
     footer .back-to-top:hover {
-        background-color: #DD793B;
+        background-color: #B2571F;
         color: #fff7f2;
-        box-shadow: inset 1px 1px 1px 1px #DD793B;
+        box-shadow: inset 1px 1px 1px 1px #B2571F;
     }
 }
 
