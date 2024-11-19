@@ -503,7 +503,11 @@ td {
 iframe {
     margin-right: 30px;
 }
-
+/*Services Section Home Page Style*/
+.img img {
+    width: 75%;
+    height: 75%;
+}
 /* Rewards page styles */
 section.hero.rewards {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/rewards.jpg");
