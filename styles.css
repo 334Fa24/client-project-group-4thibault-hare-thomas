@@ -805,14 +805,17 @@ section.FAQ {
 }
 
 /*Index Clean Fur Bold Style*/
-CFBS p{
+.CFBS{
     font-size: 50px;
-    font-weight: bold;
-    color: white;
-    -webkit-text-stroke:1.5px  #B2B71F;
+    color:#ffffff;
+    -webkit-text-stroke:#B2571F;
+    -webkit-text-stroke-width: 2.5px;
     text-align: center;
     padding: 20px 0;
-    font-family:Arial, Helvetica, sans-serif;
+}
+
+.CFBS p{
+    font-family:Arial, Helvetica, sans-serif;  
 }
 
 .main{
