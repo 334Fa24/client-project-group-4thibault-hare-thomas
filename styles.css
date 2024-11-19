@@ -578,16 +578,6 @@ section.terms-conditions h4 {
     margin: 0 0 4px 0;
 }
 
-/*Book Now Styling*/
-.hero.book{
-    text-align: left;
-    background-color: #B2571F;
-    color: #fff7f2;
-    padding: 20px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
 /* Disclaimer section styling */
 .hero-disclaimer {
     text-align: left;
@@ -607,7 +597,6 @@ section.terms-conditions h4 {
 
 /* Form layout for the location options */
 .hero-location, .booking-form {
-    width: 100%;
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff7f2;
