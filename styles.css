@@ -355,13 +355,14 @@ section.hero.services {
     font-size: 1.5em;
 }
 
-.services h3 {
+.services h2 {
     padding-top: 30px;
     font-size: 1.7em;
 }
 
-.services h4 {
-    font-size: 2.5em;
+.services h3 {
+    font-size: 1.5em;
+    padding-top: 30px;
 }
 
 .round {
@@ -437,9 +438,14 @@ section.hero.services {
     background-color: #DD793B;
 }
 
-.service h4 {
+.service h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
+    color: #fff7f2;
+}
+.service h3 {
+    text-align: center;
+    font-size: 1.75em;
     color: #fff7f2;
 }
 
@@ -448,8 +454,8 @@ section.hero.services {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -40px;
-    margin-bottom: 10px;
+    margin-top: -20px;
+    margin-bottom: 25px;
 }
 
 /*Style for Services Table*/
@@ -481,7 +487,7 @@ td {
 }
 
 
-.location h1 {
+.location h2 {
     color: #fff7f2;
     font-size: 3.5em;
     margin: 0 0 10px;
@@ -662,10 +668,11 @@ section.hero.contact{
     font-size: 2em;
 }
 
-.contact h4 {
+.contact h3 {
     text-align: center;
     font-size: 1.5em;
     color: #DD793B;
+    padding-bottom: 25px;
 }
 
 .tel-link {
