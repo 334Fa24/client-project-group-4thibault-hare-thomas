@@ -736,7 +736,7 @@ section.hero.contact{
 
 /* Mobile Grooming Content */
 section.hero.mobile-grooming {
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/mobile-grooming.jpg");
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/mobile-grooming-header.jpg");
     object-position: inherit;
 }
 
