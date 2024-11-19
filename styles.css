@@ -340,7 +340,7 @@ section.hero.book {
 }
 /*Services page style*/
 section.hero.services {
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/services-header.jpg");
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/maryville-missouri-dog-grooming.jpg");
 }
 .services {
     background-color: #fff7f2;
