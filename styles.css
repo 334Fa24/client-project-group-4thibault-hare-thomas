@@ -704,6 +704,10 @@ section.hero.contact{
     font-size: 1em;
 }
 
+.contact iframe {
+    width: 100%;
+}
+
 .map {
     border: 2px solid #3D372F;
     width: 100%;
