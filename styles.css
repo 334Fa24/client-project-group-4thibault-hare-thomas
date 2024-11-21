@@ -782,17 +782,16 @@ section.FAQ {
     background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
 }
 
-.FAQ-list{
-    list-style-type: none;
-    padding-left: 0;
-}
-
 .FAQ-list li{
     margin-bottom: 50px;   
     text-align: left;
 }
 
-.FAQ-list h3{
+.FAQ-list h3, .FAQ-list li::marker{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-weight: 700;
+    font-size: 1.17em;
     color: #B2571F;
 }
 
