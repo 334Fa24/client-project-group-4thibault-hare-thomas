@@ -1231,6 +1231,10 @@ a.btn:first-of-type {
         border: 0;
     }
 
+    .dropdown-Mobile li {
+        padding: 0;
+    }
+
     a.menu-icon {
         display: flex;
         flex-direction: column;
