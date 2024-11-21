@@ -707,11 +707,6 @@ section.terms-conditions h4 {
 }
 
 /* Disclaimer section styling */
-.hero-disclaimer {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
 .hero-disclaimer h2 {
     text-align: center;
     font-size: 30px;
@@ -807,7 +802,7 @@ section.hero.contact{
     margin: 0;
 }
 
-.about h2, .about-motto h2, .contact h2, .services h2, .mobile-grooming h2 {
+.about h2, .about-motto h2, .contact h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
     margin-bottom: 10px;
     font-size: 2em;
 }
@@ -1474,7 +1469,7 @@ a.btn:first-of-type {
     }
     
     /* H2 Styles */
-    .contact h2, .about h2, .about-motto h2, .services h2, .mobile-grooming h2 {
+    .contact h2, .about h2, .about-motto h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
         font-size: 1.6em;
     }
     
