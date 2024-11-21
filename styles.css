@@ -246,19 +246,134 @@ display: none;
     display: none;
 }
 
-/*Book now design for desktop*/
+/*Book now design for desktop
+
+
+.services{
+    text-align: center;
+}
+*/
+
+/* Hero Section (for Book Now) */
+
+/* Booking Form Styling */
+
 .book-now {
     background-color: #B2571F;
     color: #fff7f2;
+}
+
+.booking-form {
+    text-align: left;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .asterick{
     color: #B2571F;
 }
 
-.services{
-    text-align: center;
+.booking-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
+
+.booking-form label {
+    font-weight: bold;
+    color: #3D372F;
+    font-size: 1.2em; /* Slightly larger text for labels */
+    margin-bottom: 10px;
+}
+
+.booking-form input[type="text"], 
+.booking-form input[type="tel"], 
+.booking-form input[type="email"] {
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px; /* Limit the width */
+    margin: 0 auto; /* Center the inputs */
+}
+
+.booking-form input[type="text"]:focus, 
+.booking-form input[type="tel"]:focus, 
+.booking-form input[type="email"]:focus {
+    border-color: #B2571F;
+    outline: none;
+}
+
+.booking-form p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Location Selection */
+.book-location {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.book-location h2 {
+    font-size: 2.5em;
+    color: #B2571F;
+    margin-bottom: 20px;
+}
+
+.location-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.location-option {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.location-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.services-selection {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.services-option {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.services-option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit Button Styling */
+#submit {
+    background-color: #B2571F;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#submit:hover {
+    background-color: #9a4e1a;
+}
+
 
 /*Style for Dropdown(SERVICES/About)*/
 
