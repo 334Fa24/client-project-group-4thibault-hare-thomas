@@ -578,16 +578,6 @@ section.terms-conditions h4 {
     margin: 0 0 4px 0;
 }
 
-/*Book Now Styling*/
-.hero.book{
-    text-align: left;
-    background-color: #B2571F;
-    color: #fff7f2;
-    padding: 20px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
 /* Disclaimer section styling */
 .hero-disclaimer {
     text-align: left;
@@ -607,7 +597,6 @@ section.terms-conditions h4 {
 
 /* Form layout for the location options */
 .hero-location, .booking-form {
-    width: 100%;
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff7f2;
@@ -675,7 +664,7 @@ section.hero.contact{
     color: #B2571F;
 }
 
-.tel-link {
+.tel-link, .none {
     display: none;
 }
 
@@ -1388,6 +1377,27 @@ a.btn:first-of-type {
     
     .caq{
         display: none;
+    }
+    /*Mobile Style Rules for Service Table*/
+      .tab-desk-table {
+        width: 100%; /* Full width on small screens */
+        display: block; /* Stack the tables vertically */
+        margin: 10px 0; /* Space between tables */
+    }
+
+    .tab-desk-table .img {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .tab-desk-table h3 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    .tab-desk-table p {
+        font-size: 1em;
+        line-height: 1.5;
     }
 }
 /* Footer Hover Animations for Desktop */
