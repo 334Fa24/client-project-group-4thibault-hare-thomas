@@ -260,11 +260,6 @@ display: none;
     text-align: center;
 }
 
-.hero-location{
-    text-align: center;
-    font-size: x-large;
-}
-
 /*Style for Dropdown(SERVICES/About)*/
 
 nav, .dropdown{
@@ -610,7 +605,7 @@ section.terms-conditions h4 {
 }
 
 /* Form layout for the location options */
-.hero-location, .booking-form {
+.hero-location, .booking-form, .book-location {
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff7f2;
@@ -815,8 +810,8 @@ section.FAQ {
 }
 
 /*Index Clean Fur Bold Style*/
-.CFBS{
-    font-size: 50px;
+.CFBS h2{
+    font-size: 55px;
     color: #ffffff;
     -webkit-text-fill-color: #B2571F;
     text-align: center;
@@ -824,7 +819,11 @@ section.FAQ {
 }
 
 .CFBS p{
-    font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+color: #000;
+text-align: center;
+font-weight: bold;
+width: 100%;
 }
 
 .main{
@@ -838,6 +837,7 @@ section.FAQ {
     display: flex;
     flex-direction: column;
     max-width: 60%;
+    margin: 0 auto;
 }
 
 .text-container p{
