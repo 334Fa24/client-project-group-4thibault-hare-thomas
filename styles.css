@@ -34,10 +34,14 @@ ul {
     justify-content: space-between;
 }
 
-.paragraph {
+.p {
     font-size: 20px;
     line-height: 26px;
     color: #3D372F;
+}
+
+/* Bottom divider */
+.btm-divider {
     border-bottom: #B2571F 2px solid;
 }
 
@@ -788,10 +792,6 @@ section.hero.contact{
     text-align: center;
 }
 
-.contact h2{
-    font-size: 2em;
-}
-
 .contact h3 {
     font-size: 1.5em;
     padding-bottom: 25px;
@@ -820,19 +820,14 @@ section.hero.contact{
     line-height: 1.6;  
     padding: 20px 30px;
     margin: 0;
-    
 }
 
-.about h2, .about-motto h2 {
+.about h2, .about-motto h2, .contact h2, .services h2, .mobile-grooming h2 {
     margin-bottom: 10px;
     font-size: 2em;
 }
 
-.about p {
-    font-size: 1.5em;
-}
-
-.about-motto h2{
+.about-motto h2 {
     background-color: #fff7f2;
     color:#3D372F;
     padding: 20px 30px;
@@ -1494,8 +1489,8 @@ a.btn:first-of-type {
         line-height: 1.5;
     }
     
-    /* Contact Styles*/
-    .contact h2 {
+    /* H2 Styles */
+    .contact h2, .about h2, .about-motto h2, .services h2, .mobile-grooming h2 {
         font-size: 1.6em;
     }
     
@@ -1518,7 +1513,7 @@ a.btn:first-of-type {
         max-height: 350px;
     }
     /* Global Styles */
-    .paragraph {
+    .p {
         font-size: 16px;
         line-height: 20px;
     }
