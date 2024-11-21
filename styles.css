@@ -732,6 +732,10 @@ section.hero.contact{
     text-align: center;
 }
 
+.contact.hero {
+    text-align: left;
+}
+
 .contact h3 {
     font-size: 1.5em;
     padding-bottom: 25px;
@@ -757,6 +761,10 @@ section.hero.contact{
 
 .about {
     line-height: 1.6;
+}
+
+.about.hero {
+    line-height: normal;
 }
 
 .about h2, .contact h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
