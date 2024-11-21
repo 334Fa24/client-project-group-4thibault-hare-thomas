@@ -429,6 +429,10 @@ nav, .dropdown{
     border-bottom: none;
 }
 
+.dropdown-Mobile li {
+    padding: 10px;
+}
+
 /* Hero Section Styling */
 section {
     padding: 30px;
