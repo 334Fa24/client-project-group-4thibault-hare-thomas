@@ -1387,6 +1387,27 @@ a.btn:first-of-type {
     .caq{
         display: none;
     }
+    /*Mobile Style Rules for Service Table*/
+      .tab-desk-table {
+        width: 100%; /* Full width on small screens */
+        display: block; /* Stack the tables vertically */
+        margin: 10px 0; /* Space between tables */
+    }
+
+    .tab-desk-table .img {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .tab-desk-table h3 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    .tab-desk-table p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
 }
 /* Footer Hover Animations for Desktop */
 @media (min-width: 768px) {
