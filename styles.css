@@ -252,6 +252,19 @@ display: none;
     color: #fff7f2;
 }
 
+.asterick{
+    color: #B2571F;
+}
+
+.services{
+    text-align: center;
+}
+
+.hero-location{
+    text-align: center;
+    font-size: x-large;
+}
+
 /*Style for Dropdown(SERVICES/About)*/
 
 nav, .dropdown{
@@ -267,8 +280,9 @@ nav, .dropdown{
 
 /* Dropdown menu */
 .dropdown ul {
+    text-align: center;
     display: none;
-    position: absolute;
+    position: center;
     background-color:#B2571F;
     padding: 0;
     margin: 0;
