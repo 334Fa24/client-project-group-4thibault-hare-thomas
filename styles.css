@@ -814,15 +814,14 @@ section.FAQ {
 /*Index Clean Fur Bold Style*/
 .CFBS{
     font-size: 50px;
-    color:#ffffff;
-    -webkit-text-stroke:#B2571F;
-    -webkit-text-stroke-width: 2.5px;
+    color: #ffffff;
+    -webkit-text-fill-color: #B2571F;
     text-align: center;
     padding: 20px 0;
 }
 
 .CFBS p{
-    font-family:Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main{
