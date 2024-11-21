@@ -787,7 +787,11 @@ section.FAQ {
     text-align: left;
 }
 
-.FAQ-list h3, .FAQ-list li::marker{
+.FAQ-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.FAQ-list h3, .FAQ-list li::marker {
     font-family: 'Inter';
     font-weight: 400;
     font-weight: 700;
@@ -795,28 +799,15 @@ section.FAQ {
     color: #B2571F;
 }
 
-.FAQ-header{
-    color: #fff7f2;
-    padding: 20px 0;
-}
-
-.FAQ-header h1{ 
-    margin: 0;
-    font-size: 50px;
-    font-weight: bold;    
-    max-width: 1200px;
-}
-
-.caq h2{
-    margin-top: 25px;
-    padding-left: 1.0em;
+.caq h2 {
     text-align: center;
     font-size: 36px;
     border-bottom: 2px solid #B2571F;
+    padding-bottom: 6px;
 }
 
 /*INDEX Main styles*/
-.slideshow-container{
+.slideshow-container {
     position: relative;
     max-width: 600px;
     margin: auto;
@@ -824,7 +815,7 @@ section.FAQ {
 }
 
 /*Index Clean Fur Bold Style*/
-.CFBS h2{
+.CFBS h2 {
     font-size: 55px;
     color: #ffffff;
     -webkit-text-fill-color: #B2571F;
@@ -1398,9 +1389,6 @@ a.btn:first-of-type {
         padding: 10px 0;
     }
     
-    .caq{
-        display: none;
-    }
     /*Mobile Style Rules for Service Table*/
       .tab-desk-table {
         width: 100%; /* Full width on small screens */
