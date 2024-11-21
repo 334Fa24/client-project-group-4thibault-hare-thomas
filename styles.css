@@ -388,7 +388,6 @@ nav, .dropdown{
 
 /* Dropdown menu */
 .dropdown ul {
-    text-align: center;
     display: none;
     position: absolute;
     background-color:#B2571F;
