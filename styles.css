@@ -356,7 +356,10 @@ section.hero.services {
     line-height: 1.6;  
     padding: 20px 30px;
     margin: 0;
-    
+}
+
+.services h2 span {
+    color: #b2571f
 }
 
 .services p {
@@ -486,15 +489,26 @@ td {
 
 /*Location Home Page Style*/
 #info-container {
-        align-content: center;
-        margin-left: 60px;
-    }
+    align-content: center;
+}
+
 .location {
     background-color: #B2571F;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
 }
 
+.location > * {
+    width: 47.5%;
+}
+
+iframe {
+    height: 100vh;
+    max-height: 450px;
+    margin: 0;
+}
 
 .location h2 {
     color: #fff7f2;
@@ -506,18 +520,13 @@ td {
     color: #fff7f2;
     font-size: 2.5em;
     margin: 30px 0 10px;
-    text-align: center;
 }
 
 .location p {
     color: #fff7f2;
     margin: 0 0 10px;
-    text-align: center;
 }
 
-iframe {
-    margin-right: 30px;
-}
 /*Services Section Home Page Style*/
 .img img {
     width: 75%;
@@ -661,13 +670,15 @@ section.hero.contact{
     
 }
 
-.contact h2{
+.contact {
     text-align: center;
+}
+
+.contact h2{
     font-size: 2em;
 }
 
 .contact h3 {
-    text-align: center;
     font-size: 1.5em;
     padding-bottom: 25px;
     color: #B2571F;
@@ -684,6 +695,10 @@ section.hero.contact{
 .contact-email-link {
     color: #B2571F;
     font-size: 1em;
+}
+
+.contact iframe {
+    width: 100%;
 }
 
 .map {
@@ -1233,12 +1248,6 @@ a.btn:first-of-type {
         padding: 12px;
         width: 100%;
     }
-
-    /*Map Style*/
-    iframe {
-        display: none;
-            
-    }
     
     /*About Page Mobile Style*/
     .about{
@@ -1412,6 +1421,30 @@ a.btn:first-of-type {
     .tab-desk-table p {
         font-size: 1em;
         line-height: 1.5;
+    }
+    
+    /* Contact Styles*/
+    .contact h2 {
+        font-size: 1.6em;
+    }
+    
+    .contact h3 {
+        font-size: 1.2em;
+        padding-bottom: 25px;
+        color: #B2571F;
+    }
+
+    /* Index Styles */
+    .location {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .location > * {
+        width: 100%;
+    }
+    .location iframe {
+        margin-bottom: 26px;
+        max-height: 350px;
     }
 }
 /* Footer Hover Animations for Desktop */
