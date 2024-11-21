@@ -273,10 +273,6 @@ display: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.asterick{
-    color: #B2571F;
-}
-
 .booking-form .form-group {
     display: flex;
     flex-direction: column;
@@ -470,7 +466,7 @@ section.hero.services {
     text-align: left;
 }
 
-.services h2 span {
+.services h2 span, .asterick {
     color: #b2571f
 }
 
@@ -499,23 +495,6 @@ section.hero.services {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.long-line {
-    border: 1px solid black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
-    margin-bottom: 25px;
-}
-
-.long-line2 {
-    border: 1px solid black;
-    width: 100%;
-    margin-left: 100%;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 35px;
 }
 
 .short-line {
