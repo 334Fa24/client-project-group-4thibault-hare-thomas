@@ -469,12 +469,6 @@ section.hero.services {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/maryville-missouri-dog-grooming.jpg");
     text-align: left;
 }
-.services {
-    background-color: #fff7f2;
-    line-height: 1.6;  
-    padding: 20px 30px;
-    margin: 0;
-}
 
 .services h2 span {
     color: #b2571f
@@ -482,7 +476,6 @@ section.hero.services {
 
 .services h2 {
     padding-top: 30px;
-    font-size: 1.7em;
 }
 
 .services h2:first-of-type {
@@ -716,18 +709,13 @@ section.terms-conditions h4 {
 /* Disclaimer section styling */
 .hero-disclaimer {
     text-align: left;
-    background-color: #fff7f2;
-    padding: 15px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #B2571F;
-    
 }
 
 .hero-disclaimer h2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px;
-    
 }
 
 /* Form layout for the location options */
@@ -815,9 +803,7 @@ section.hero.contact{
 }
 
 .about, .about-motto {
-    background-color: #fff7f2;
     line-height: 1.6;  
-    padding: 20px 30px;
     margin: 0;
 }
 
@@ -827,7 +813,6 @@ section.hero.contact{
 }
 
 .about-motto h2 {
-    background-color: #fff7f2;
     color:#3D372F;
     padding: 20px 30px;
     margin: 0;
