@@ -466,21 +466,21 @@ section.hero.services {
     text-align: left;
 }
 
-.services h2 span, .asterick {
+.services h2 span, .services h3 span, .asterick {
     color: #b2571f
 }
 
-.services h2 {
-    padding-top: 30px;
+.services h2, .services h3 {
+    margin-top: 30px;
 }
 
 .services h2:first-of-type {
-    padding-top: 0;
+    margin-top: 0;
 }
 
 .services h3 {
     font-size: 1.5em;
-    padding-top: 30px;
+    margin-bottom: 6px;
 }
 
 .round {
@@ -495,27 +495,6 @@ section.hero.services {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.short-line {
-    border: 1px solid black;
-    width: 23%;
-    margin-left: 0;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-.learn-btn {
-    background-color: #B2571F;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
-    margin-top: 50px;
 }
 
 /*Style for Hover Img*/
@@ -784,6 +763,12 @@ section.hero.contact{
 .about h2, .about-motto h2, .contact h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
     margin-bottom: 10px;
     font-size: 2em;
+}
+
+.services .btn {
+    margin: 20px 0 0 0!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .about-motto h2 {
@@ -1450,6 +1435,11 @@ a.btn:first-of-type {
     /* H2 Styles */
     .contact h2, .about h2, .about-motto h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
         font-size: 1.6em;
+    }
+
+    /* H3 Styles */
+    .services h3 {
+        font-size: 1.4em;
     }
     
     .contact h3 {
