@@ -35,12 +35,11 @@ ul {
 }
 
 .paragraph {
-    padding: 20px 30px;
     font-size: 2em; 
     line-height: 1.6; 
     color: #3D372F;
-    background-color: #fff7f2;
     margin: 0;
+    border-bottom: #B2571F 2px solid;
 }
 
 .red {
@@ -350,6 +349,7 @@ section.hero.book {
 /*Services page style*/
 section.hero.services {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/maryville-missouri-dog-grooming.jpg");
+    text-align: left;
 }
 .services {
     background-color: #fff7f2;
@@ -699,25 +699,6 @@ section.hero.contact{
 
 .contact iframe {
     width: 100%;
-}
-
-.map {
-    border: 2px solid #3D372F;
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-}
-
-/*About content*/
-.paragraph {
-    padding: 20px 30px;
-    font-size: 2em; 
-    line-height: 1.6; 
-    color: #3D372F;
-    text-align: center;
-    background-color: #fff7f2;
-    margin: 0;
-    border-bottom: 2px solid #B2571F;
 }
 
 .about, .about-motto {
