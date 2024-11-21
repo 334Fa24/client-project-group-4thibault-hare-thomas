@@ -491,9 +491,10 @@ td {
 
 /*Location Home Page Style*/
 #info-container {
-        align-content: center;
-        margin-left: 60px;
-    }
+    align-content: center;
+    margin-left: 60px;
+}
+
 .location {
     background-color: #B2571F;
     display: flex;
@@ -1412,6 +1413,13 @@ a.btn:first-of-type {
     .tab-desk-table p {
         font-size: 1em;
         line-height: 1.5;
+    }
+    /* Index Styles */
+    #info-container {
+        margin-left: 0;
+    }
+    .location {
+        justify-content: center;
     }
 }
 /* Footer Hover Animations for Desktop */
