@@ -755,12 +755,11 @@ section.hero.contact{
     width: 100%;
 }
 
-.about, .about-motto {
-    line-height: 1.6;  
-    margin: 0;
+.about {
+    line-height: 1.6;
 }
 
-.about h2, .about-motto h2, .contact h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
+.about h2, .contact h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
     margin-bottom: 10px;
     font-size: 2em;
 }
@@ -771,18 +770,15 @@ section.hero.contact{
     padding-bottom: 20px;
 }
 
-.about-motto h2 {
-    color:#3D372F;
-    padding: 20px 30px;
-    margin: 0;
+.about-motto {
+    justify-content: center;
+    gap: 35px;
 }
 
-.about-motto h1 {
+.about-motto h3 {
     font-size: 2em;
-    color:#B2571F;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 1.2;
+    color: #B2571F;
+    line-height: normal;
     word-spacing: 35px;
 }
 
@@ -1275,14 +1271,6 @@ a.btn:first-of-type {
     /*About Page Mobile Style*/
     .about{
         text-overflow: ellipsis;
-    }   
-    
-    .about-motto h2{
-        font-size: 30px;
-    }
-    
-    .about-motto h1{
-        font-size: 30px; 
     }
     
     .happy-dog-img {
@@ -1433,8 +1421,14 @@ a.btn:first-of-type {
     }
     
     /* H2 Styles */
-    .contact h2, .about h2, .about-motto h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
+    .contact h2, .about h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
         font-size: 1.6em;
+    }
+
+    .about-motto {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
     }
 
     /* H3 Styles */
