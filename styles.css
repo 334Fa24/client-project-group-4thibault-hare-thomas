@@ -260,6 +260,10 @@ display: none;
     text-align: center;
 }
 
+.services h2 span {
+    color: #b2571f
+}
+
 .hero-location{
     text-align: center;
     font-size: x-large;
@@ -498,9 +502,20 @@ td {
 .location {
     background-color: #B2571F;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
 }
 
+.location > * {
+    width: 47.5%;
+}
+
+iframe {
+    height: 100vh;
+    max-height: 450px;
+    margin: 0;
+}
 
 .location h2 {
     color: #fff7f2;
@@ -521,9 +536,6 @@ td {
     text-align: center;
 }
 
-iframe {
-    margin-right: 30px;
-}
 /*Services Section Home Page Style*/
 .img img {
     width: 75%;
@@ -1234,12 +1246,6 @@ a.btn:first-of-type {
         padding: 12px;
         width: 100%;
     }
-
-    /*Map Style*/
-    iframe {
-        display: none;
-            
-    }
     
     /*About Page Mobile Style*/
     .about{
@@ -1418,8 +1424,18 @@ a.btn:first-of-type {
     #info-container {
         margin-left: 0;
     }
+
     .location {
-        justify-content: center;
+        flex-direction: column;
+    }
+
+    .location > * {
+        width: 100%;
+    }
+
+    .location iframe {
+        margin-bottom: 26px;
+        max-height: 350px;
     }
 }
 /* Footer Hover Animations for Desktop */
