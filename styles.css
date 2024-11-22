@@ -430,7 +430,7 @@ section.hero.about{
 }
 /*BOOK NOW style*/
 section.hero.book {
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/book-now.jpg");
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/booknow.jpg");
 }
 /*Services page style*/
 section.hero.services {
