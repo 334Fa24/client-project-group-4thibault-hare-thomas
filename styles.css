@@ -248,13 +248,7 @@ display: none;
     display: none;
 }
 
-/*Book now design for desktop
-
-
-.services{
-    text-align: center;
-}
-*/
+/*Book now design for desktop*/
 
 /* Hero Section (for Book Now) */
 
@@ -479,7 +473,9 @@ section.hero.services {
     margin: 0;
     text-align: left;
 }
-
+.short-paragraph {
+    display: none;
+}
 .services h2 span, .services h3 span, .asterick {
     color: #b2571f
 }
@@ -503,7 +499,7 @@ section.hero.services {
 
 .prices {
     width: 87%;
-    height: 87%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -568,7 +564,9 @@ td {
     text-align: center;
     color: #fff7f2;
 }
-
+.short-paragraph {
+    display: none;
+}
 /*Location Home Page Style*/
 #info-container {
     align-content: center;
@@ -1255,6 +1253,17 @@ a.btn:first-of-type {
         right: 0;
         height: 119px;
         cursor: pointer;
+    }
+    
+    .prices {
+        width: 100%;
+        height: auto;
+    }
+    .short-paragraph {
+        display: block;
+    }
+    .long-pgraph {
+        display: none;
     }
     /*STYLES FOR BANNER mobile*/
     .banner {
