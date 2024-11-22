@@ -34,13 +34,15 @@ ul {
     justify-content: space-between;
 }
 
-.paragraph {
-    padding: 20px 30px;
-    font-size: 2em; 
-    line-height: 1.6; 
+.p {
+    font-size: 20px;
+    line-height: 26px;
     color: #3D372F;
-    background-color: #fff7f2;
-    margin: 0;
+}
+
+/* Bottom divider */
+.btm-divider {
+    border-bottom: #B2571F 2px solid;
 }
 
 .red {
@@ -246,11 +248,130 @@ display: none;
     display: none;
 }
 
-/*Book now design for desktop*/
+/*Book now design for desktop
+
+
+.services{
+    text-align: center;
+}
+*/
+
+/* Hero Section (for Book Now) */
+
+/* Booking Form Styling */
+
 .book-now {
     background-color: #B2571F;
     color: #fff7f2;
 }
+
+.booking-form {
+    text-align: left;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: #3D372F;
+    font-size: 1.2em; /* Slightly larger text for labels */
+    margin-bottom: 10px;
+}
+
+.booking-form input[type="text"], 
+.booking-form input[type="tel"], 
+.booking-form input[type="email"] {
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px; /* Limit the width */
+    margin: 0 auto; /* Center the inputs */
+}
+
+.booking-form input[type="text"]:focus, 
+.booking-form input[type="tel"]:focus, 
+.booking-form input[type="email"]:focus {
+    border-color: #B2571F;
+    outline: none;
+}
+
+.booking-form p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Location Selection */
+.book-location {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.book-location h2 {
+    font-size: 2.5em;
+    color: #B2571F;
+    margin-bottom: 20px;
+}
+
+.location-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.location-option {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.location-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.services-selection {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.services-option {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.services-option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit Button Styling */
+#submit {
+    background-color: #B2571F;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#submit:hover {
+    background-color: #9a4e1a;
+}
+
 
 /*Style for Dropdown(SERVICES/About)*/
 
@@ -308,6 +429,10 @@ nav, .dropdown{
     border-bottom: none;
 }
 
+.dropdown-Mobile li {
+    padding: 10px;
+}
+
 /* Hero Section Styling */
 section {
     padding: 30px;
@@ -348,22 +473,24 @@ section.hero.services {
     line-height: 1.6;  
     padding: 20px 30px;
     margin: 0;
-    
+    text-align: left;
 }
 
-.services p {
-    padding-top: 15px;
-    font-size: 1.5em;
+.services h2 span, .services h3 span, .asterick {
+    color: #b2571f
 }
 
-.services h2 {
-    padding-top: 30px;
-    font-size: 1.7em;
+.services h2, .services h3 {
+    margin-top: 30px;
+}
+
+.services h2:first-of-type {
+    margin-top: 0;
 }
 
 .services h3 {
     font-size: 1.5em;
-    padding-top: 30px;
+    margin-bottom: 6px;
 }
 
 .round {
@@ -378,44 +505,6 @@ section.hero.services {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.long-line {
-    border: 1px solid black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
-    margin-bottom: 25px;
-}
-
-.long-line2 {
-    border: 1px solid black;
-    width: 100%;
-    margin-left: 100%;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 35px;
-}
-
-.short-line {
-    border: 1px solid black;
-    width: 23%;
-    margin-left: 0;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-.learn-btn {
-    background-color: #B2571F;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
-    margin-top: 50px;
 }
 
 /*Style for Hover Img*/
@@ -478,15 +567,26 @@ td {
 
 /*Location Home Page Style*/
 #info-container {
-        align-content: center;
-        margin-left: 60px;
-    }
+    align-content: center;
+}
+
 .location {
     background-color: #B2571F;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
 }
 
+.location > * {
+    width: 47.5%;
+}
+
+iframe {
+    height: 100vh;
+    max-height: 450px;
+    margin: 0;
+}
 
 .location h2 {
     color: #fff7f2;
@@ -498,18 +598,13 @@ td {
     color: #fff7f2;
     font-size: 2.5em;
     margin: 30px 0 10px;
-    text-align: center;
 }
 
 .location p {
     color: #fff7f2;
     margin: 0 0 10px;
-    text-align: center;
 }
 
-iframe {
-    margin-right: 30px;
-}
 /*Services Section Home Page Style*/
 .img img {
     width: 75%;
@@ -580,24 +675,14 @@ section.terms-conditions h4 {
 }
 
 /* Disclaimer section styling */
-.hero-disclaimer {
-    text-align: left;
-    background-color: #fff7f2;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #B2571F;
-    
-}
-
 .hero-disclaimer h2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px;
-    
 }
 
 /* Form layout for the location options */
-.hero-location, .booking-form {
+.hero-location, .booking-form, .book-location {
     margin-bottom: 20px;
     padding: 10px;
     background-color: #fff7f2;
@@ -652,13 +737,15 @@ section.hero.contact{
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/contact-us.jpg");
 }
 
-.contact h2{
+.contact {
     text-align: center;
-    font-size: 2em;
+}
+
+.contact.hero {
+    text-align: left;
 }
 
 .contact h3 {
-    text-align: center;
     font-size: 1.5em;
     padding-bottom: 25px;
     color: #B2571F;
@@ -677,56 +764,38 @@ section.hero.contact{
     font-size: 1em;
 }
 
-.map {
-    border: 2px solid #3D372F;
+.contact iframe {
     width: 100%;
-    max-width: 600px;
-    height: 450px;
 }
 
-/*About content*/
-.paragraph {
-    padding: 20px 30px;
-    font-size: 2em; 
-    line-height: 1.6; 
-    color: #3D372F;
-    text-align: center;
-    background-color: #fff7f2;
-    margin: 0;
-    border-bottom: 2px solid #B2571F;
+.about {
+    line-height: 1.6;
 }
 
-.about, .about-motto {
-    background-color: #fff7f2;
-    line-height: 1.6;  
-    padding: 20px 30px;
-    margin: 0;
-    
+.about.hero {
+    line-height: normal;
 }
 
-.about h2, .about-motto h2 {
+.about h2, .contact h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
     margin-bottom: 10px;
-    text-align: left;
     font-size: 2em;
 }
 
-.about p {
-    font-size: 1.5em;
+.services .btn {
+    margin: 20px 0 0 0!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.about-motto h2{
-    background-color: #fff7f2;
-    color:#3D372F;
-    padding: 20px 30px;
-    margin: 0;
+.about-motto {
+    justify-content: center;
+    gap: 35px;
 }
 
-.about-motto h1 {
+.about-motto h3 {
     font-size: 2em;
-    color:#B2571F;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 1.2;
+    color: #B2571F;
+    line-height: normal;
     word-spacing: 35px;
 }
 
@@ -758,42 +827,32 @@ section.hero.faq {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/faq-header.jpg");
 }
 
-.FAQ-list{
-    list-style-type: none;
-    padding-left: 0;
-}
-
 .FAQ-list li{
     margin-bottom: 50px;   
     text-align: left;
 }
 
-.FAQ-list h3{
+.FAQ-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.FAQ-list h3, .FAQ-list li::marker {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-weight: 700;
+    font-size: 1.17em;
     color: #B2571F;
 }
 
-.FAQ-header{
-    color: #fff7f2;
-    padding: 20px 0;
-}
-
-.FAQ-header h1{ 
-    margin: 0;
-    font-size: 50px;
-    font-weight: bold;    
-    max-width: 1200px;
-}
-
-.caq h2{
-    margin-top: 25px;
-    padding-left: 1.0em;
+.caq h2 {
     text-align: center;
     font-size: 36px;
     border-bottom: 2px solid #B2571F;
+    padding-bottom: 6px;
 }
 
 /*INDEX Main styles*/
-.slideshow-container{
+.slideshow-container {
     position: relative;
     max-width: 600px;
     margin: auto;
@@ -801,8 +860,8 @@ section.hero.faq {
 }
 
 /*Index Clean Fur Bold Style*/
-.CFBS{
-    font-size: 50px;
+.CFBS h2 {
+    font-size: 55px;
     color: #ffffff;
     -webkit-text-fill-color: #B2571F;
     text-align: center;
@@ -810,7 +869,12 @@ section.hero.faq {
 }
 
 .CFBS p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 2.8;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
 }
 
 .main{
@@ -824,6 +888,7 @@ section.hero.faq {
     display: flex;
     flex-direction: column;
     max-width: 60%;
+    margin: 0 auto;
 }
 
 .text-container p{
@@ -1172,6 +1237,10 @@ a.btn:first-of-type {
         border: 0;
     }
 
+    .dropdown-Mobile li {
+        padding: 0;
+    }
+
     a.menu-icon {
         display: flex;
         flex-direction: column;
@@ -1219,35 +1288,10 @@ a.btn:first-of-type {
         padding: 12px;
         width: 100%;
     }
-
-    /*Map Style*/
-    iframe {
-        display: none;
-            
-    }
     
     /*About Page Mobile Style*/
     .about{
         text-overflow: ellipsis;
-    }   
-    
-    .about p{
-        text-align: center;
-    }
-    
-    .about h2{
-        text-align: center;
-    }
-    
-    .about-motto h2{
-        text-align: center;
-        font-size: 30px;
-    }
-    
-    .about-motto h1{
-        text-align: center;
-        font-size: 30px;
-        
     }
     
     .happy-dog-img {
@@ -1375,9 +1419,6 @@ a.btn:first-of-type {
         padding: 10px 0;
     }
     
-    .caq{
-        display: none;
-    }
     /*Mobile Style Rules for Service Table*/
       .tab-desk-table {
         width: 100%; /* Full width on small screens */
@@ -1398,6 +1439,46 @@ a.btn:first-of-type {
     .tab-desk-table p {
         font-size: 1em;
         line-height: 1.5;
+    }
+    
+    /* H2 Styles */
+    .contact h2, .about h2, .services h2, .mobile-grooming h2, .hero-disclaimer h2 {
+        font-size: 1.6em;
+    }
+
+    .about-motto {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+
+    /* H3 Styles */
+    .services h3 {
+        font-size: 1.4em;
+    }
+    
+    .contact h3 {
+        font-size: 1.2em;
+        padding-bottom: 25px;
+        color: #B2571F;
+    }
+
+    /* Index Styles */
+    .location {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .location > * {
+        width: 100%;
+    }
+    .location iframe {
+        margin-bottom: 26px;
+        max-height: 350px;
+    }
+    /* Global Styles */
+    .p {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 /* Footer Hover Animations for Desktop */
