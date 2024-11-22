@@ -342,6 +342,7 @@ section.hero.book {
 section.hero.services {
     background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/maryville-missouri-dog-grooming.jpg");
 }
+
 .services {
     background-color: #fff7f2;
     line-height: 1.6;  
@@ -648,8 +649,7 @@ section.terms-conditions h4 {
 
 /*Contact Page Styling*/
 section.hero.contact{
-    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
-    
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/contact-us.jpg");
 }
 
 .contact h2{
@@ -754,8 +754,8 @@ section.mobile-grooming img {
 }
 
 /*FAQ-about sub-content*/
-section.FAQ {
-    background-image: linear-gradient(to top, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5));
+section.hero.faq {
+    background-image: linear-gradient(to bottom, rgba(221, 121, 59, 0.5), rgba(221, 121, 59, 0.5)), url("images/faq-header.jpg");
 }
 
 .FAQ-list{
